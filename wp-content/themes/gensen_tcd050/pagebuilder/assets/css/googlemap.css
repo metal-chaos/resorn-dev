@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.pb-widget-googlemap { position: relative; }
+.pb-widget-googlemap:after { clear: both; content: " "; display: table; }
+.pb-widget-googlemap iframe { display: block; width: 100%; }
+
+.pb_googlemap_overlay {
+  background: rgba(0, 0, 0, 0.5); height: 100%; padding: 0 7.5%; width: 50%; position: absolute; top: 0; left: 0; z-index: 1;
+  display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; justify-content: center;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
+}
+.pb_googlemap_overlay.pb_googlemap-overlay_layout-type2 { left: auto; right: 0; }
+
+.pb_googlemap_map { position: relative; z-index: 0; }
+.pb_googlemap_map.pb_googlemap-map_layout-type2 { float: right; width: 50%; }
+.pb_googlemap_map.pb_googlemap-map_layout-type2.pb_googlemap-overlay_layout-type2 { float: left; width: 50%; }
+
+.pb_googlemap_headline { color: #fff; font-size: 40px; font-weight: 400; line-height: 1.5; margin: 0 !important; padding: 0 !important; }
+.pb_googlemap_content { color: #fff; font-size: 14px; line-height: 2; margin: 0; padding: 0; }
+.pb_googlemap_headline + .pb_googlemap_content { margin-top: 18px }
+.pb_googlemap_button { border: 1px solid #fff; color: #fff; display: inline-block; font-size: 14px; height: 48px; line-height: 48px; min-width: 200px; padding: 0 20px; text-align: center; text-decoration: none !important;
+  -webkit-align-self: center; align-self: center;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
+}
+.pb_googlemap_overlay * + .pb_googlemap_button { margin-top: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .pb-widget-googlemap iframe { max-height: 90vh; }
+
+  .pb_googlemap_overlay { padding: 7.5%; position: static; width: 100%; }
+
+  .pb_googlemap_map.pb_googlemap-map_layout-type2 { float: none !important; width: 100% !important; }
+
+  .pb_googlemap_headline { font-size: 30px; }
+  .pb_googlemap_headline + .pb_googlemap_content { margin-top: 10px }
+  .pb_googlemap_button { font-size: 12.5px; height: 38px; line-height: 38px; min-width: 160px; padding: 0 15px; }
+  .pb_googlemap_overlay * + .pb_googlemap_button { margin-top: 18px; }
+}

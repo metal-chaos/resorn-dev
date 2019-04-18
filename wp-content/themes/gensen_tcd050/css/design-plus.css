@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+
+/* ----------------------- TCD Advanced Style -------------------------- */
+
+
+@font-face {
+    font-family: 'design_plus';
+    src: url('../fonts/design_plus.eot?v=1.4');
+    src: url('../fonts/design_plus.eot?v=1.4#iefix') format('embedded-opentype'),
+         url('../fonts/design_plus.woff?v=1.4') format('woff'),
+         url('../fonts/design_plus.ttf?v=1.4') format('truetype'),
+         url('../fonts/design_plus.svg?v=1.4#design_plus') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ----------------------------------------------------------------------
+ Column layout - カラムレイアウト
+---------------------------------------------------------------------- */
+.post_content .post_row { margin-left:-15px; margin-right:-15px; }
+.post_content .post_col, .post_content .post_col-2, .post_content .post_col-3 { position:relative; min-height:1px; width:100%; padding-right:15px; padding-left:15px; float:left; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; margin-bottom:2em; }
+.post_content .post_col-2 { margin-bottom:0; }
+@media screen and (min-width:768px){
+	.post_content .post_col-2 { width:50%; /* 2カラム */ }
+	.post_content .post_col-3 { width:33.33333%; }
+}
+@media screen and (min-width:1024px){
+	.post_content .post_col-2 { width:50%; /* 2カラム */ }
+	.post_content .post_col-3 { width:33.33333%; }
+}
+.post_content .post_row:before, .post_content .post_row:after { content: " "; display: table; }
+.post_content .post_row:after { clear: both; }
+
+
+/* ----------------------------------------------------------------------
+ headline - 見出しのスタイル
+---------------------------------------------------------------------- */
+.post_content .style3a, .post_content .style3b, .post_content .style4a, .post_content .style4b, .post_content .style5a, .post_content .style5b, .post_content .style6 { line-height:1.6; } 
+/* h3 */
+.post_content .style3a { margin:0em 0 1.5em; padding:1.1em .2em 1em; font-size:18px; color: #666; font-weight:400; border-top:1px solid #666; border-bottom:1px solid #666; }
+.post_content .style3b { margin:3em 0 1.5em; padding:1.1em .9em 1em; font-size:22px; font-weight:400; border-top:2px solid #222; border-bottom:1px solid #ddd; background:#fafafa; box-shadow:0px 1px 2px #f7f7f7; }
+/* h4 */
+.post_content .style4a { margin:2.5em 2px 1.2em; padding:.3em 0 .3em .8em; font-size:18px; font-weight:400; border-bottom:none; border-left:2px solid #222; }
+.post_content .style4b { margin:2.5em 0 1.2em; padding:.9em 0 .8em; font-size:18px; font-weight:400; border-bottom:1px dotted #aaa; }
+/* h5 */
+.post_content .style5a { margin:2em 0 1em; padding:.5em .8em .3em 1em; font-weight:700; font-size:18px; background:#f5f5f5; box-shadow:0px 2px 0px 0px #f2f2f2; }
+.post_content .style5b { margin:2em 0 1em; padding:.5em .8em .4em 1em; font-weight:400; font-size:18px; color:#fff; background:#222; border-radius:4px; box-shadow:0px 2px 0px 0px #f2f2f2; }
+/* h6 */
+.post_content .style6 { position:relative; margin:2em 0 1em; padding:.5em .8em .8em 1.3em; color:#222; font-weight:bold; font-size:16px; }
+.post_content .style6:before { position:absolute; width:12px; height:12px; top:.5em; left:.2em; background:#222; content:""; }
+.post_content .news_headline1{ position:relative; margin:80px 0 25px 0; padding:.5em; border-left:8px solid #444; line-height:1.2; font-size:1.2em; }
+.post_content .news_headline1:after { content:""; position:absolute; bottom:0px; left:0; height:0; width:100%; border-bottom:1px dotted #ddd; }
+.post_content .news_headline2{ margin:40px 0 20px 0; padding:0 .5em; border-left:6px solid #545454; line-height:26px; font-size:1.1em;}
+.post_content .balloon { clear:both; display:block; position:relative; margin:50px 0 22px; padding:.5em 18px .5em; width:auto; min-width:115px; color:#fff; text-align:left; font-size:20px; font-weight:400; background:#222; z-index:0; border-bottom:0; }
+.post_content .balloon:after { content:""; position:absolute; bottom:-10px; left:30px; margin-left:-10px; display:block; width:0px; height:0px; border-style:solid; border-width:10px 10px 0 10px; border-color:#222 transparent transparent transparent; }
+
+
+/* ----------------------------------------------------------------------
+ flame - 囲み枠
+---------------------------------------------------------------------- */
+.well { min-height:20px; padding:19px; margin-bottom:20px; background-color:#f5f5f5; border:1px solid #e3e3e3; border-radius:4px; -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05); box-shadow:inset 0 1px 1px rgba(0,0,0,0.05); }
+.well2 { margin:1em 0 30px; padding:1em 1.5em; line-height:2; border:1px solid #cdcdcd; background:#fcfcfc; box-shadow: 0 1px 3px 0 rgba(195,195,195,0.3); }
+.well3 { margin:2em 0 2.5em; padding:1em 1.5em;line-height:2.0; border:1px dashed #cdcdcd; background:#fcfcfc;  box-shadow: 0 1px 3px 0 rgba(195,195,195,0.3); }
+.wl_red { background-color: #f2dede; border-color: #ebccd1; color: #a94442; }
+.wl_yellow { background-color: #fcf8e3; border-color: #faebcc; color: #8a6d3b; }
+.wl_blue { background-color: #d9edf7; border-color: #bce8f1; color: #31708f; }
+.wl_green { background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d; }
+
+
+/* ----------------------------------------------------------------------
+ button - CSSボタンのスタイル
+---------------------------------------------------------------------- */
+.post_content .q_button {
+  min-width:200px;
+  max-width:90%;
+  background-color:#fc6023;
+  display:inline-block;
+  vertical-align:middle;
+  padding:.6em 1.3em .5em;
+  font-weight:400;
+  font-size:100%;
+  color:#fff;
+  text-decoration:none;
+  text-align:center;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+  transition:all 0.3s
+  ease-in-out 0s;
+  border: 2px solid #fff;
+}
+.post_content .q_button:hover, .post_content .q_button:focus {
+  text-decoration:none;
+  color:#fc6023;
+  background-color:#fff;
+  border: 2px solid #fc6023; 
+}
+/* Button option */
+.post_content .rounded { border-radius:6px; }
+.post_content .pill { border-radius:50px; }
+.post_content .sz_full { min-width:100px; max-width:100%; display:block; font-size:110%; padding:1em 1.5em .9em; }
+.post_content .sz_l {
+  min-width:350px;
+  max-width:90%;
+  font-size:110%;
+  padding:.8em 1.5em .7em;
+  margin: 5px;
+}
+@media screen and (max-width: 479px) {
+ .post_content .sz_l { min-width:280px; max-width:100%; width: 350px; }
+}
+.post_content .sz_s { min-width:100px; max-width:90%; font-size:85%; padding:.4em 1em .3em; }
+.post_content .bt_red{ background:#c01f0e; color:#fff; }
+.post_content .bt_red:hover, .post_content .bt_red:focus { background-color:#d33929; color:#fff; }
+.post_content .bt_yellow{ background:#f1c40f; color:#fff; }
+.post_content .bt_yellow:hover, .post_content .bt_yellow:focus { background-color:#f9d441; color:#fff; }
+.post_content .bt_blue{ background:#2980b9; color:#fff; }
+.post_content .bt_blue:hover, .post_content .bt_blue:focus { background-color:#3a91c9; color:#fff; }
+.post_content .bt_green{ background:#27ae60; color:#fff; }
+.post_content .bt_green:hover, .post_content .bt_green:focus { background-color:#39c574; color:#fff; }
+
+
+/* ----------------------------------------------------------------------
+Youtube responsive - Youtube動画のレスポンシブ表示
+---------------------------------------------------------------------- */
+.ytube { position:relative; height:0; margin-top:20px; margin-bottom:20px; padding-bottom:56.25%; padding-top:30px; overflow:hidden; }
+.ytube iframe { position:absolute; top:0; right:0; width:100% !important; height:100% !important; }
+
+
+/* ----------------------------------------------------------------------
+Table responsive - テーブルのレスポンシブ表示
+---------------------------------------------------------------------- */
+.rps_table { line-height:2.0; }
+@media only screen and (max-width:480px) {
+  .rps_table tr { display:block; margin-bottom:1.5em; }
+  .rps_table th, .rps_table td{ display:list-item; list-style-type:none; border:none; }
+}
+
+
+/* ----------------------------------------------------------------------
+ Cardlink style - カードリンクのスタイル
+---------------------------------------------------------------------- */
+.cardlink { padding:12px 12px 12px 12px; margin:10px 0; border:1px solid #ddd; word-wrap:break-word; max-width:100%; background:#fafafa; }
+.cardlink_thumbnail { float:left; margin-right:20px; }
+.cardlink_content { line-height:1.6; }
+.cardlink .timestamp { display-inline; margin:0; padding:0; vertical-align:top; color:#666; line-height:1.6; font-size:12px; }
+.cardlink .timestamp:before {
+  font-family:'design_plus'; content:'\e94e';
+  font-size:12px; color:#222; display:block; float:left; margin:0 8px 0 0;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.cardlink_title { font-size:16px; margin:0 0 5px; }
+.cardlink_title a { font-weight:bold; color:#000; text-decoration:none; }
+.cardlink_title a:hover { text-decoration:underline; }
+.cardlink_excerpt { color:#333; font-size:13px; overflow:hidden; line-height:1.8; }
+.cardlink_footer { clear:both; }
+.clear { clear:both; }
+@media screen and (max-width: 767px) {
+  .cardlink_thumbnail { float:none; }
+}
+@media screen and (max-width: 479px) {
+  .cardlink_excerpt { float:none; }
+}
+
+
+/* ----------------------------------------------------------------------
+ Contactform - お問い合わせフォーム
+---------------------------------------------------------------------- */
+.wpcf7 { width:100%; border:1px solid #ddd; background:#fafafa; padding:0; margin:0 0 2.5em !important; font-size:14px;}
+.wpcf7 form{ margin:1.5em 1.5em 0;}
+.wpcf7 p { margin-bottom:1em; font-size:12px; }
+.wpcf7 input, .wpcf7 textarea { width:auto; -moz-box-sizing: border-box; box-sizing: border-box; width:100%; border:1px solid #ccc; line-height:1.2; padding:8px;  }
+.wpcf7 select, .wpcf7 input[type=checkbox], .wpcf7 input[type=radio] { width:auto; max-width:97%; border:1px solid #ccc; padding:8px; }
+.wpcf7 select, .wpcf7 .wpcf7-list-item-label { line-height:1.2; font-size:14px; }
+.wpcf7-list-item { display:block; }
+.wpcf7 textarea { height:300px; }
+.wpcf7 input:focus, .wpcf7 textarea:focus { outline:none; border:1px solid #bbb; -webkit-box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.2); box-shadow:inner 0 0 5px rgba(0, 0, 0, 0.5); }
+.wpcf7 input.wpcf7-submit { position:relative; display:block; width:225px; height:48px; margin:30px auto 0; background-color:#333333; cursor:pointer; border:none !important; color:#fff; text-align:center; text-decoration:none; font-size:14px; line-height:1.5; outline:none; -webkit-transition: all .3s; transition: all .3s; }
+.wpcf7 input.wpcf7-submit, .wpcf7 input.wpcf7-submit::before, .wpcf7 input.wpcf7-submit::after { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+.wpcf7 input.wpcf7-submit:hover { background-color:#666666; }
+.wpcf7 .wpcf7-not-valid { background:pink; }
+.wpcf7 .wpcf7-response-output { margin:10px 0 0; padding:8px 35px 8px 14px; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; }
+.wpcf7 .wpcf7-validation-errors { color:#B94A48; background-color:#F2DEDE; border:1px solid #EED3D7; }
+.wpcf7 .wpcf7-mail-sent-ok { color:#3A87AD; background-color:#D9EDF7; border:1px solid #BCE8F1; }
+
+
+/* ----------------------------------------------------------------------
+ font-size - フォントサイズ
+---------------------------------------------------------------------- */
+.text70{font-size:70%}      /* フォントサイズ70% */
+.text80{font-size:80%}
+.text90{font-size:90%}
+.text100{font-size:100%}
+.text110{font-size:110%}
+.text120{font-size:120%}
+.text130{font-size:130%}
+.text140{font-size:140%}
+.text150{font-size:150%}
+.text160{font-size:160%}
+.text170{font-size:170%}
+.text180{font-size:180%}
+.text190{font-size:190%}
+.text200{font-size:200%}
+.text210{font-size:210%}
+.text220{font-size:220%}
+.b{font-weight:700}     /* 太字 */
+.u{text-decoration:underline}     /* 下線 */
+.del{text-decoration:line-throug} /* 打ち消し線 */
+
+
+/* ----------------------------------------------------------------------
+ font-color - フォントカラー
+---------------------------------------------------------------------- */
+.red{color:red}     /* 赤色 */
+.blue{color:#2ca9e1}    /* 青色 */
+.green{color:#82ae46}   /* 緑色 */
+.orange{color:#ff7d00}    /* 橙色 */
+.yellow{color:#fff000}    /* 黄色 */
+.pink{color:#ff0084}    /* ピンク */
+.gray{color:#999999}    /* グレー */
+
+
+/* ----------------------------------------------------------------------
+ background-color - 背景色
+---------------------------------------------------------------------- */
+.bg-yellow{padding:2px;background-color:#ff0} /* 黄色の文字背景 */
+.bg-blue{padding:2px;background-color:#4ab0f5}  /* 青色の文字背景 */
+.bg-red{padding:2px;background-color:red} /* 赤色の文字背景 */
+
+
+/* ----------------------------------------------------------------------
+ text-align - 配置
+---------------------------------------------------------------------- */
+.align1{text-align:center !important} /* 中央寄せ */
+.align2{text-align:right !important}  /* 右寄せ */
+.align3{text-align:left !important} /* 左寄せ */
+
+
+/* ----------------------------------------------------------------------
+ float - 回り込み
+---------------------------------------------------------------------- */
+.r-flo{float:right;margin:10px} /* 右に回り込み */
+.l-flo{float:left;margin:10px}  /* 左に回り込み */
+.f-clear{clear:both}      /* 回り込みの解除 */
+
+
+/* ----------------------------------------------------------------------
+ hover - 画像リンクマウスオーバー時の不透明度
+---------------------------------------------------------------------- */
+a img.fade { background:none !important; outline:none; -webkit-transition:all .3s; transition:all .3s; }
+a:hover img.fade { opacity:0.7; filter:alpha(opacity=70); -ms-filter:"alpha( opacity=70 )"; background:none !important; }
+
+
+/* ----------------------------------------------------------------------
+ text-style - テキストスタイル
+---------------------------------------------------------------------- */
+.att {padding-left:1em;text-indent:-1em;} /* 注意書き等で二行目以降を字下げ */
+.att_box { margin:2em 0 2.5em; padding:1em 1.2em; line-height:2.0; border:1px dotted #cccccc; background:#fcfcfc; box-shadow:0px 4px 0px 0px #f7f7f7; } /* テキストボックス */
+
+
+/* ----------------------------------------------------------------------
+ margin - 要素の外側の余白
+---------------------------------------------------------------------- */
+.m0{margin:0 !important}    /* margin 0px を指定するクラス */
+.mt0{margin-top:0 !important}   /* margin-top0px を指定するクラス */
+.mr0{margin-right:0 !important}   /* margin-right0px を指定するクラス*/
+.mb0{margin-bottom:0 !important}  /* margin-bottom0px を指定するクラス*/
+.ml0{margin-left:0 !important}    /* margin-left0px を指定するクラス*/
+
+.m5{margin:5px !important}
+.mt5{margin-top:5px !important}
+.mr5{margin-right:5px !important}
+.mb5{margin-bottom:5px !important}
+.ml5{margin-left:5px !important}
+
+.m10{margin:10px !important}
+.mt10{margin-top:10px !important}
+.mr10{margin-right:10px !important}
+.mb10{margin-bottom:10px !important}
+.ml10{margin-left:10px !important}
+
+.m15{margin:15px !important}
+.mt15{margin-top:15px !important}
+.mr15{margin-right:15px !important}
+.mb15{margin-bottom:15px !important}
+.ml15{margin-left:15px !important}
+
+.m20{margin:20px !important}
+.mt20{margin-top:20px !important}
+.mr20{margin-right:20px !important}
+.mb20{margin-bottom:20px !important}
+.ml20{margin-left:20px !important}
+
+.m25{margin:25px !important}
+.mt25{margin-top:25px !important}
+.mr25{margin-right:25px !important}
+.mb25{margin-bottom:25px !important}
+.ml25{margin-left:25px !important}
+
+.m30{margin:30px !important}
+.mt30{margin-top:30px !important}
+.mr30{margin-right:30px !important}
+.mb30{margin-bottom:30px !important}
+.ml30{margin-left:30px !important}
+
+.m35{margin:35px !important}
+.mt35{margin-top:35px !important}
+.mr35{margin-right:35px !important}
+.mb35{margin-bottom:35px !important}
+.ml35{margin-left:35px !important}
+
+.m40{margin:40px !important}
+.mt40{margin-top:40px !important}
+.mr40{margin-right:40px !important}
+.mb40{margin-bottom:40px !important}
+.ml40{margin-left:40px !important}
+
+.m45{margin:45px !important}
+.mt45{margin-top:45px !important}
+.mr45{margin-right:45px !important}
+.mb45{margin-bottom:45px !important}
+.ml45{margin-left:45px !important}
+
+.m50{margin:50px !important}
+.mt50{margin-top:50px !important}
+.mr50{margin-right:50px !important}
+.mb50{margin-bottom:50px !important}
+.ml50{margin-left:50px !important}
+
+.m55{margin:55px !important}
+.mt55{margin-top:55px !important}
+.mr55{margin-right:55px !important}
+.mb55{margin-bottom:55px !important}
+
+.ml55{margin-left:55px !important}
+.m60{margin:60px !important}
+.mt60{margin-top:60px !important}
+.mr60{margin-right:60px !important}
+.mb60{margin-bottom:60px !important}
+.ml60{margin-left:60px !important}
+
+.m65{margin:65px !important}
+.mt65{margin-top:65px !important}
+.mr65{margin-right:65px !important}
+.mb65{margin-bottom:65px !important}
+.ml65{margin-left:65px !important}
+
+.m70{margin:70px !important}
+.mr70{margin-right:70px !important}
+.mb70{margin-bottom:70px !important}
+.ml70{margin-left:70px !important}
+
+.m75{margin:75px !important}
+.mt75{margin-top:75px !important}
+.mr75{margin-right:75px !important}
+.mb75{margin-bottom:75px !important}
+.ml75{margin-left:75px !important}
+
+.m80{margin:80px !important}
+.mt80{margin-top:80px !important}
+.mr80{margin-right:80px !important}
+.mb80{margin-bottom:80px !important}
+.ml80{margin-left:80px !important}
+
+
+/* ----------------------------------------------------------------------
+ padding - 要素の内側の余白
+---------------------------------------------------------------------- */
+.p0{padding:0 !important}   /* padding-0px を指定するクラス */
+.pt0{padding-top:0 !important}    /* padding-top0px を指定するクラス */
+.pr0{padding-right:0 !important}  /* padding-right0px を指定するクラス */
+.pb0{padding-bottom:0 !important} /* padding-bottom0px を指定するクラス */
+.pl0{padding-left:0 !important}   /* padding-left0px を指定するクラス */
+
+.p5{padding:5px !important}
+.pt5{padding-top:5px !important}
+.pr5{padding-right:5px !important}
+.pb5{padding-bottom:5px !important}
+.pl5{padding-left:5px !important}
+
+.p10{padding:10px !important}
+.pt10{padding-top:10px !important}
+.pr10{padding-right:10px !important}
+.pb10{padding-bottom:10px !important}
+.pl10{padding-left:10px !important}
+
+
