@@ -477,7 +477,8 @@
 ?>
   </div>
  </div>
-
+ <!-- 3つの特徴 -->
+<?php require_once "front-page/three-features.php"; ?>
 <?php
 					endif;
 				endif;

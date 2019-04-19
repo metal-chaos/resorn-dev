@@ -6,7 +6,15 @@ wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
-wp-content/uploads/
+wp-content/uploads/crawled-images
+wp-content/uploads/2017
+wp-content/uploads/2018
+wp-content/uploads/2019
+wp-content/uploads/backwpup-b1de3d-backups
+wp-content/uploads/backwpup-b1de3d-logs
+wp-content/uploads/backwpup-b1de3d-temp
+wp-content/uploads/wordpress-popular-posts
+wp-content/uploads/wpallexport
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
