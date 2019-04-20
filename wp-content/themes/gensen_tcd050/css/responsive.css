@@ -333,6 +333,39 @@
   .cb_content-blog_list #post_list { margin:26px 0 0 0; }
   .cb_content-blog_list .archive_link { margin:16px 0 0 0; text-align:center; }
   .cb_content-blog_list .archive_link a { display:inline-block; padding:0 30px; min-width:100px; line-height:40px; text-decoration:none; color:#fff; background:#aaa; position:relative; }
+
+  /* トップページ */
+  .cb_content-wysiwyg img.top-icon {
+    width: 130px;
+    padding: 0 0.5em;
+  }
+  .cb_content-wysiwyg .top-icons .for-sp-icon{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0 1.5em;
+  }
+  .cb_content-wysiwyg .post_col.post_col-3 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .cb_content-wysiwyg .post_col.post_col-3 h3 {
+  font-size: 18px;
+  }
+  .cb_content-wysiwyg .post_col.post_col-3 .icon-bottom-text {
+    margin: 0 0 0.2em 0;
+  }
+  .top-logos {
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 0;
+  }
+  .top-logo {
+    flex-direction: column;
+    padding: 0;
+    width: 40%;
+    margin: 5% 5% 0 5%;
+  }
 }
 
 /* ----------------------------------------------------------------------
