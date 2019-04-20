@@ -29,7 +29,7 @@ function tcd_head() {
 ?>
 body, input, textarea, select { font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
 <?php  } elseif($dp_options['font_type'] == 'type2') { ?>
-body, input, textarea, select { font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+body, input, textarea, select { font-family: 'Orbitron', 'M PLUS 1p', "Segoe UI", Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
 <?php  } else { ?>
 body, input, textarea, select { font-family: "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
 <?php
@@ -38,7 +38,7 @@ body, input, textarea, select { font-family: "Times New Roman" , "游明朝" , "
 ?>
 .rich_font { font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; font-weight: normal; }
 <?php  } elseif($dp_options['headline_font_type'] == 'type2') { ?>
-.rich_font { font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif; font-weight: 500; }
+.rich_font { font-family: 'Orbitron', 'M PLUS 1p', "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif; font-weight: 500; }
 <?php  } else { ?>
 .rich_font { font-family: "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; font-weight:500; }
 <?php

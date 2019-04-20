@@ -15,6 +15,7 @@ if (! $dp_options) $dp_options = get_desing_plus_option();
 <title><?php wp_title('|', true, 'right'); ?></title>
 <meta name="description" content="<?php seo_description(); ?>">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700|Orbitron:400,700&amp;subset=japanese" rel="stylesheet">
 <?php if ($dp_options['use_ogp']) { ogp(); }; ?>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php if ($favicon = wp_get_attachment_image_src($dp_options['favicon'], 'full')) : ?>

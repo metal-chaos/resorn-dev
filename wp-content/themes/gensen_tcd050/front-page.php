@@ -477,8 +477,11 @@
 ?>
   </div>
  </div>
- <!-- 3つの特徴 -->
+  <!-- 3つの特徴 -->
 <?php require_once "front-page/three-features.php"; ?>
+
+ <!-- 本日のRESORN（リゾーン） -->
+<?php require_once "front-page/todays-resorn.php"; ?>
 <?php
 					endif;
 				endif;

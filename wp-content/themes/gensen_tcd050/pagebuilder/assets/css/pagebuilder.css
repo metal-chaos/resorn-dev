@@ -13,9 +13,9 @@
 
 
 /* 見出し、キャッチフレーズ */
-.pb_font_family_type1 { font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
-.pb_font_family_type2 { font-family: "Segoe UI", Arial, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
-.pb_font_family_type3 { font-family: "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
+.pb_font_family_type1 { font-family: 'Orbitron', 'M PLUS 1p', Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+.pb_font_family_type2 { font-family: 'Orbitron', 'M PLUS 1p', "Segoe UI", Arial, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+.pb_font_family_type3 { font-family: 'Orbitron', 'M PLUS 1p', "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
 
 .pb-widget-headline h3 { margin:0; padding:0; }
 .pb-widget-catchcopy h4 { margin:0; padding:0; }
