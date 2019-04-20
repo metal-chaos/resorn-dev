@@ -293,8 +293,8 @@
 
   /* コンテンツビルダー */
   .cb_content { margin:0 0 30px 0; }
-  .cb_content .cb_headline { /*margin:-0.2em 0 10px 0;*/ margin:-0.2em 0 7px 0; font-size:20px; line-height:1.4; text-align:left; }
-  .cb_content .cb_desc { line-height:2; text-align:left; }
+  .cb_content .cb_headline { /*margin:-0.2em 0 10px 0;*/ margin:-0.2em 0 7px 0; font-size:20px; line-height:1.4; text-align:center; }
+  .cb_content .cb_desc { line-height:2; text-align:center; }
 
   /* 紹介コンテンツ */
   .cb_content-introduce { margin-bottom:30px; }
