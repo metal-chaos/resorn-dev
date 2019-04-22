@@ -467,9 +467,14 @@
 								echo '<a href="' . get_term_link($term) . '">';
 							endif;
 
-							echo '<div class="info"><h3>' . esc_html( $term->name ) . '</h3>';
+              # カテゴリーリストのリストの文言
+              echo '<div class="info"><h3>' . esc_html( $term->name ) . '</h3>';
+              echo '<div class="info-texts">';
+              echo '<div class="info-text">平均時給：<span class="info-score">1,008円</span></div>';
+              echo '<div class="info-text">平均スコア：<span class="info-score">4.9</span> <span class="star">★</span></div>';
+              echo '</div>';
 							if ( $term->description ) :
-								echo str_replace( array( "\r\n", "\r", "\n" ), '<br>', esc_html( $term->description ) );
+                echo str_replace( array( "\r\n", "\r", "\n" ), '<br>', esc_html( $term->description ) );
 							endif;
 							echo "</div></a></li>\n";
 						}
@@ -482,6 +487,9 @@
 
  <!-- 本日のRESORN（リゾーン） -->
 <?php require_once "front-page/todays-resorn.php"; ?>
+
+<!-- 本日の福利厚生 -->
+<?php require_once "front-page/welfare.php"; ?>
 <?php
 					endif;
 				endif;

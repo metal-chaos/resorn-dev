@@ -1406,7 +1406,12 @@ a.guest-url { text-decoration:underline; }
 
 /* カテゴリーリスト */
 .cb_content-category_list { margin-bottom:68px; }
-.cb_content-category_list ul { margin:50px 0 0 0; padding:0; }
+.cb_content-category_list ul {
+  margin:50px 0 0 0;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+}
 .cb_content-category_list ul li { margin:0 1.3333% 12px 0; padding:0; width:32.4444%; float:left; }
 .cb_content-category_list ul li:nth-child(3n) { margin-right:0; }
 .cb_content-category_list ul li a {
@@ -1417,11 +1422,19 @@ a.guest-url { text-decoration:underline; }
   position: relative;
   text-align: center;
   font-size: 18px;
+  border: 1px #888 solid;
 }
 .cb_content-category_list ul li a:hover { background:#eee; }
 .cb_content-category_list ul li .info { padding:0 22px; width:100%; line-height:1.7; color:#000; position:absolute; top:50%; left:0;
   -webkit-transform:translate3d(0,-50%,0); -mox-transform:translate3d(0,-50%,0); -ms-transform:translate3d(0,-50%,0); -o-transform:translate3d(0,-50%,0); transform:translate3d(0,-50%,0);
   -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;
+}
+.cb_content-category_list ul li .info .info-texts {
+  font-size: 0.5em;
+  color: #222;
+}
+.cb_content-category_list ul li .info .info-score {
+  color: #ff638c;
 }
 .cb_content-category_list ul li .info h3 { margin:0 0 7px 0; padding:0; font-size:114.285%; font-weight:700; line-height:1.7; }
 .cb_content-category_list ul li.has_image .image { display:block; float:left; width:150px; height:150px; overflow:hidden; position:relative; }

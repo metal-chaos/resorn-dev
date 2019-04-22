@@ -294,7 +294,11 @@
   /* コンテンツビルダー */
   .cb_content { margin:0 0 30px 0; }
   .cb_content .cb_headline { /*margin:-0.2em 0 10px 0;*/ margin:-0.2em 0 7px 0; font-size:20px; line-height:1.4; text-align:center; }
-  .cb_content .cb_desc { line-height:2; text-align:center; }
+  .cb_content .cb_desc {
+    line-height:2;
+    text-align:center;
+    font-size: 12px;
+  }
 
   /* 紹介コンテンツ */
   .cb_content-introduce { margin-bottom:30px; }
@@ -316,16 +320,23 @@
     padding: 0;
     text-align: center;
   }
-  .cb_content-category_list ul li { margin:0 0 6px 0; padding:0; width:initial; float:none !important; }
+  .cb_content-category_list ul li {
+    margin:0 0 6px 0;
+    padding:0;
+    width:33.3333%;
+    float:none !important;
+  }
   .cb_content-category_list ul li:last-child { margin-bottom:0; }
   .cb_content-category_list ul li a {
-    height: 60px;
-    width: 30%;
-    float: left;
+    height: 120px;
+    width: 100%;
     margin: 1.5%;
     box-shadow: 3px 3px #ddd;
   }
-  .cb_content-category_list ul li .info h3 { margin:0 0 4px 0; font-size:116.666%; font-weight:700; font-size:14px; }
+    .cb_content-category_list ul li .info {
+      padding: 2px;
+  }
+  .cb_content-category_list ul li .info h3 { margin:0 0 4px 0; font-size:116.666%; font-weight:700; font-size:13px; }
   .cb_content-category_list ul li.has_image .image { width:120px; height:120px; }
   .cb_content-category_list ul li.has_image .info { font-size:12px; left:120px; width:50%; width:-webkit-calc(100% - 115px); width:calc(100% - 115px); }
 
