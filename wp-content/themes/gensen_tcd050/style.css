@@ -1546,6 +1546,13 @@ a.guest-url { text-decoration:underline; }
   width: 100%;
   font-size: 22px;
 }
+.cb_content-wysiwyg .post_col.post_col-4 {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.cb_content-wysiwyg .post_col.post_col-4 p {
+  font-size: 12px;
+}
 .top-logos {
   justify-content: space-between;
   display: flex;

@@ -17,25 +17,27 @@
 
 
 /* ----------------------------------------------------------------------
- Column layout - ƒJƒ‰ƒ€ƒŒƒCƒAƒEƒg
+ Column layout - ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½Aï¿½Eï¿½g
 ---------------------------------------------------------------------- */
 .post_content .post_row { margin-left:-15px; margin-right:-15px; }
 .post_content .post_col, .post_content .post_col-2, .post_content .post_col-3 { position:relative; min-height:1px; width:100%; padding-right:15px; padding-left:15px; float:left; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; margin-bottom:2em; }
 .post_content .post_col-2 { margin-bottom:0; }
 @media screen and (min-width:768px){
-	.post_content .post_col-2 { width:50%; /* 2ƒJƒ‰ƒ€ */ }
-	.post_content .post_col-3 { width:33.33333%; }
+	.post_content .post_col-2 { width:50%; /* 2ï¿½Jï¿½ï¿½ï¿½ï¿½ */ }
+  .post_content .post_col-3 { width:33.33333%; }
+  .post_content .post_col-4 { width:25%; }
 }
 @media screen and (min-width:1024px){
-	.post_content .post_col-2 { width:50%; /* 2ƒJƒ‰ƒ€ */ }
-	.post_content .post_col-3 { width:33.33333%; }
+	.post_content .post_col-2 { width:50%; /* 2ï¿½Jï¿½ï¿½ï¿½ï¿½ */ }
+  .post_content .post_col-3 { width:33.33333%; }
+  .post_content .post_col-4 { width:25%; }
 }
 .post_content .post_row:before, .post_content .post_row:after { content: " "; display: table; }
 .post_content .post_row:after { clear: both; }
 
 
 /* ----------------------------------------------------------------------
- headline - Œ©o‚µ‚ÌƒXƒ^ƒCƒ‹
+ headline - ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ÌƒXï¿½^ï¿½Cï¿½ï¿½
 ---------------------------------------------------------------------- */
 .post_content .style3a, .post_content .style3b, .post_content .style4a, .post_content .style4b, .post_content .style5a, .post_content .style5b, .post_content .style6 { line-height:1.6; } 
 /* h3 */
@@ -58,7 +60,7 @@
 
 
 /* ----------------------------------------------------------------------
- flame - ˆÍ‚İ˜g
+ flame - ï¿½Í‚İ˜g
 ---------------------------------------------------------------------- */
 .well { min-height:20px; padding:19px; margin-bottom:20px; background-color:#f5f5f5; border:1px solid #e3e3e3; border-radius:4px; -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05); box-shadow:inset 0 1px 1px rgba(0,0,0,0.05); }
 .well2 { margin:1em 0 30px; padding:1em 1.5em; line-height:2; border:1px solid #cdcdcd; background:#fcfcfc; box-shadow: 0 1px 3px 0 rgba(195,195,195,0.3); }
@@ -70,7 +72,7 @@
 
 
 /* ----------------------------------------------------------------------
- button - CSSƒ{ƒ^ƒ“‚ÌƒXƒ^ƒCƒ‹
+ button - CSSï¿½{ï¿½^ï¿½ï¿½ï¿½ÌƒXï¿½^ï¿½Cï¿½ï¿½
 ---------------------------------------------------------------------- */
 .post_content .q_button {
   min-width:200px;
@@ -125,14 +127,14 @@
 
 
 /* ----------------------------------------------------------------------
-Youtube responsive - Youtube“®‰æ‚ÌƒŒƒXƒ|ƒ“ƒVƒu•\¦
+Youtube responsive - Youtubeï¿½ï¿½ï¿½ï¿½Ìƒï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Vï¿½uï¿½\ï¿½ï¿½
 ---------------------------------------------------------------------- */
 .ytube { position:relative; height:0; margin-top:20px; margin-bottom:20px; padding-bottom:56.25%; padding-top:30px; overflow:hidden; }
 .ytube iframe { position:absolute; top:0; right:0; width:100% !important; height:100% !important; }
 
 
 /* ----------------------------------------------------------------------
-Table responsive - ƒe[ƒuƒ‹‚ÌƒŒƒXƒ|ƒ“ƒVƒu•\¦
+Table responsive - ï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½Ìƒï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Vï¿½uï¿½\ï¿½ï¿½
 ---------------------------------------------------------------------- */
 .rps_table { line-height:2.0; }
 @media only screen and (max-width:480px) {
@@ -142,7 +144,7 @@ Table responsive - ƒe[ƒuƒ‹‚ÌƒŒƒXƒ|ƒ“ƒVƒu•\¦
 
 
 /* ----------------------------------------------------------------------
- Cardlink style - ƒJ[ƒhƒŠƒ“ƒN‚ÌƒXƒ^ƒCƒ‹
+ Cardlink style - ï¿½Jï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ÌƒXï¿½^ï¿½Cï¿½ï¿½
 ---------------------------------------------------------------------- */
 .cardlink { padding:12px 12px 12px 12px; margin:10px 0; border:1px solid #ddd; word-wrap:break-word; max-width:100%; background:#fafafa; }
 .cardlink_thumbnail { float:left; margin-right:20px; }
@@ -168,7 +170,7 @@ Table responsive - ƒe[ƒuƒ‹‚ÌƒŒƒXƒ|ƒ“ƒVƒu•\¦
 
 
 /* ----------------------------------------------------------------------
- Contactform - ‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€
+ Contactform - ï¿½ï¿½ï¿½â‚¢ï¿½ï¿½ï¿½í‚¹ï¿½tï¿½Hï¿½[ï¿½ï¿½
 ---------------------------------------------------------------------- */
 .wpcf7 { width:100%; border:1px solid #ddd; background:#fafafa; padding:0; margin:0 0 2.5em !important; font-size:14px;}
 .wpcf7 form{ margin:1.5em 1.5em 0;}
@@ -189,9 +191,9 @@ Table responsive - ƒe[ƒuƒ‹‚ÌƒŒƒXƒ|ƒ“ƒVƒu•\¦
 
 
 /* ----------------------------------------------------------------------
- font-size - ƒtƒHƒ“ƒgƒTƒCƒY
+ font-size - ï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Tï¿½Cï¿½Y
 ---------------------------------------------------------------------- */
-.text70{font-size:70%}      /* ƒtƒHƒ“ƒgƒTƒCƒY70% */
+.text70{font-size:70%}      /* ï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Tï¿½Cï¿½Y70% */
 .text80{font-size:80%}
 .text90{font-size:90%}
 .text100{font-size:100%}
@@ -207,69 +209,69 @@ Table responsive - ƒe[ƒuƒ‹‚ÌƒŒƒXƒ|ƒ“ƒVƒu•\¦
 .text200{font-size:200%}
 .text210{font-size:210%}
 .text220{font-size:220%}
-.b{font-weight:700}     /* ‘¾š */
-.u{text-decoration:underline}     /* ‰ºü */
-.del{text-decoration:line-throug} /* ‘Å‚¿Á‚µü */
+.b{font-weight:700}     /* ï¿½ï¿½ï¿½ï¿½ */
+.u{text-decoration:underline}     /* ï¿½ï¿½ï¿½ï¿½ */
+.del{text-decoration:line-throug} /* ï¿½Å‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 
 
 /* ----------------------------------------------------------------------
- font-color - ƒtƒHƒ“ƒgƒJƒ‰[
+ font-color - ï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Jï¿½ï¿½ï¿½[
 ---------------------------------------------------------------------- */
-.red{color:red}     /* ÔF */
-.blue{color:#2ca9e1}    /* ÂF */
-.green{color:#82ae46}   /* —ÎF */
-.orange{color:#ff7d00}    /* òF */
-.yellow{color:#fff000}    /* ‰©F */
-.pink{color:#ff0084}    /* ƒsƒ“ƒN */
-.gray{color:#999999}    /* ƒOƒŒ[ */
+.red{color:red}     /* ï¿½ÔF */
+.blue{color:#2ca9e1}    /* ï¿½ÂF */
+.green{color:#82ae46}   /* ï¿½ÎF */
+.orange{color:#ff7d00}    /* ï¿½ï¿½F */
+.yellow{color:#fff000}    /* ï¿½ï¿½ï¿½F */
+.pink{color:#ff0084}    /* ï¿½sï¿½ï¿½ï¿½N */
+.gray{color:#999999}    /* ï¿½Oï¿½ï¿½ï¿½[ */
 
 
 /* ----------------------------------------------------------------------
- background-color - ”wŒiF
+ background-color - ï¿½wï¿½iï¿½F
 ---------------------------------------------------------------------- */
-.bg-yellow{padding:2px;background-color:#ff0} /* ‰©F‚Ì•¶š”wŒi */
-.bg-blue{padding:2px;background-color:#4ab0f5}  /* ÂF‚Ì•¶š”wŒi */
-.bg-red{padding:2px;background-color:red} /* ÔF‚Ì•¶š”wŒi */
+.bg-yellow{padding:2px;background-color:#ff0} /* ï¿½ï¿½ï¿½Fï¿½Ì•ï¿½ï¿½ï¿½ï¿½wï¿½i */
+.bg-blue{padding:2px;background-color:#4ab0f5}  /* ï¿½ÂFï¿½Ì•ï¿½ï¿½ï¿½ï¿½wï¿½i */
+.bg-red{padding:2px;background-color:red} /* ï¿½ÔFï¿½Ì•ï¿½ï¿½ï¿½ï¿½wï¿½i */
 
 
 /* ----------------------------------------------------------------------
- text-align - ”z’u
+ text-align - ï¿½zï¿½u
 ---------------------------------------------------------------------- */
-.align1{text-align:center !important} /* ’†‰›Šñ‚¹ */
-.align2{text-align:right !important}  /* ‰EŠñ‚¹ */
-.align3{text-align:left !important} /* ¶Šñ‚¹ */
+.align1{text-align:center !important} /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+.align2{text-align:right !important}  /* ï¿½Eï¿½ï¿½ */
+.align3{text-align:left !important} /* ï¿½ï¿½ï¿½ï¿½ */
 
 
 /* ----------------------------------------------------------------------
- float - ‰ñ‚è‚İ
+ float - ï¿½ï¿½èï¿½ï¿½
 ---------------------------------------------------------------------- */
-.r-flo{float:right;margin:10px} /* ‰E‚É‰ñ‚è‚İ */
-.l-flo{float:left;margin:10px}  /* ¶‚É‰ñ‚è‚İ */
-.f-clear{clear:both}      /* ‰ñ‚è‚İ‚Ì‰ğœ */
+.r-flo{float:right;margin:10px} /* ï¿½Eï¿½É‰ï¿½èï¿½ï¿½ */
+.l-flo{float:left;margin:10px}  /* ï¿½ï¿½ï¿½É‰ï¿½èï¿½ï¿½ */
+.f-clear{clear:both}      /* ï¿½ï¿½èï¿½İ‚Ì‰ï¿½ï¿½ï¿½ */
 
 
 /* ----------------------------------------------------------------------
- hover - ‰æ‘œƒŠƒ“ƒNƒ}ƒEƒXƒI[ƒo[‚Ì•s“§–¾“x
+ hover - ï¿½æ‘œï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½}ï¿½Eï¿½Xï¿½Iï¿½[ï¿½oï¿½[ï¿½ï¿½ï¿½Ì•sï¿½ï¿½ï¿½ï¿½ï¿½x
 ---------------------------------------------------------------------- */
 a img.fade { background:none !important; outline:none; -webkit-transition:all .3s; transition:all .3s; }
 a:hover img.fade { opacity:0.7; filter:alpha(opacity=70); -ms-filter:"alpha( opacity=70 )"; background:none !important; }
 
 
 /* ----------------------------------------------------------------------
- text-style - ƒeƒLƒXƒgƒXƒ^ƒCƒ‹
+ text-style - ï¿½eï¿½Lï¿½Xï¿½gï¿½Xï¿½^ï¿½Cï¿½ï¿½
 ---------------------------------------------------------------------- */
-.att {padding-left:1em;text-indent:-1em;} /* ’ˆÓ‘‚«“™‚Å“ñs–ÚˆÈ~‚ğš‰º‚° */
-.att_box { margin:2em 0 2.5em; padding:1em 1.2em; line-height:2.0; border:1px dotted #cccccc; background:#fcfcfc; box-shadow:0px 4px 0px 0px #f7f7f7; } /* ƒeƒLƒXƒgƒ{ƒbƒNƒX */
+.att {padding-left:1em;text-indent:-1em;} /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å“ï¿½sï¿½ÚˆÈ~ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+.att_box { margin:2em 0 2.5em; padding:1em 1.2em; line-height:2.0; border:1px dotted #cccccc; background:#fcfcfc; box-shadow:0px 4px 0px 0px #f7f7f7; } /* ï¿½eï¿½Lï¿½Xï¿½gï¿½{ï¿½bï¿½Nï¿½X */
 
 
 /* ----------------------------------------------------------------------
- margin - —v‘f‚ÌŠO‘¤‚Ì—]”’
+ margin - ï¿½vï¿½fï¿½ÌŠOï¿½ï¿½ï¿½Ì—]ï¿½ï¿½
 ---------------------------------------------------------------------- */
-.m0{margin:0 !important}    /* margin 0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
-.mt0{margin-top:0 !important}   /* margin-top0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
-.mr0{margin-right:0 !important}   /* margin-right0px ‚ğw’è‚·‚éƒNƒ‰ƒX*/
-.mb0{margin-bottom:0 !important}  /* margin-bottom0px ‚ğw’è‚·‚éƒNƒ‰ƒX*/
-.ml0{margin-left:0 !important}    /* margin-left0px ‚ğw’è‚·‚éƒNƒ‰ƒX*/
+.m0{margin:0 !important}    /* margin 0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
+.mt0{margin-top:0 !important}   /* margin-top0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
+.mr0{margin-right:0 !important}   /* margin-right0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X*/
+.mb0{margin-bottom:0 !important}  /* margin-bottom0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X*/
+.ml0{margin-left:0 !important}    /* margin-left0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X*/
 
 .m5{margin:5px !important}
 .mt5{margin-top:5px !important}
@@ -368,13 +370,13 @@ a:hover img.fade { opacity:0.7; filter:alpha(opacity=70); -ms-filter:"alpha( opa
 
 
 /* ----------------------------------------------------------------------
- padding - —v‘f‚Ì“à‘¤‚Ì—]”’
+ padding - ï¿½vï¿½fï¿½Ì“ï¿½ï¿½ï¿½ï¿½Ì—]ï¿½ï¿½
 ---------------------------------------------------------------------- */
-.p0{padding:0 !important}   /* padding-0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
-.pt0{padding-top:0 !important}    /* padding-top0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
-.pr0{padding-right:0 !important}  /* padding-right0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
-.pb0{padding-bottom:0 !important} /* padding-bottom0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
-.pl0{padding-left:0 !important}   /* padding-left0px ‚ğw’è‚·‚éƒNƒ‰ƒX */
+.p0{padding:0 !important}   /* padding-0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
+.pt0{padding-top:0 !important}    /* padding-top0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
+.pr0{padding-right:0 !important}  /* padding-right0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
+.pb0{padding-bottom:0 !important} /* padding-bottom0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
+.pl0{padding-left:0 !important}   /* padding-left0px ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½Nï¿½ï¿½ï¿½X */
 
 .p5{padding:5px !important}
 .pt5{padding-top:5px !important}

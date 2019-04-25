@@ -36,13 +36,19 @@
 @media only screen and (max-width:991px) {
   #header { position:relative; border-top:0!important; }
   #header_top { overflow:initial; }
-  #header_top .inner { height:60px; min-height:initial; }
+  #header_top .inner {
+    height:100%;
+    min-height: initial;
+  }
 
   /* ロゴ */
   #header_logo, #header_logo_fix { max-height:60px; }
-  #header_logo .logo, #header_logo_fix .logo { line-height:60px; }
+  #header_logo .logo, #header_logo_fix .logo { line-height:40px; }
   #header_logo #logo_text .logo, #header_logo_fix #logo_text_fixed .logo { font-size:26px; }
-  #header_logo img, #header_logo_fix img { max-height:50px; }
+  #header_logo img, #header_logo_fix img {
+    height: 30px;
+    max-height:50px;
+  }
   #header_logo .desc { display:none; }
   #header_logo .desc_sp {
   position: relative;

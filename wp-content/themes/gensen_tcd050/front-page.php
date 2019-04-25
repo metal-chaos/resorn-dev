@@ -525,8 +525,6 @@
  <!-- 本日のRESORN（リゾーン） -->
 <?php require_once "front-page/todays-resorn.php"; ?>
 
-<!-- 本日の福利厚生 -->
-<?php require_once "front-page/welfare.php"; ?>
 <?php
                     endif;
                 endif;
