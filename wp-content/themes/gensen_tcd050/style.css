@@ -209,7 +209,7 @@ a.menu_button { display:none; }
 
 /* ヘッダー検索 */
 #header_top a.search_button { display:none; }
-#header_search, #index_header_search { display:block; padding:25px 0; background:#222; }
+#header_search, #index_header_search { display:block; padding:5px 0; background:#222; }
 @media only screen and (min-width:992px) {
   #header_search { display:block !important; }
 }
@@ -1416,6 +1416,7 @@ a.guest-url { text-decoration:underline; }
     background:rgba(0,0,0,0.6);
     position:relative; z-index:4;
     margin-top: 80px;
+    padding: 25px 0;
   }
   .has_header_content #index_header_search .search-title {
     color: #fff;
@@ -1577,6 +1578,11 @@ a.guest-url { text-decoration:underline; }
   border-radius: 8px 8px 0 0;
   font-weight: normal;
   text-align: center;
+  cursor: pointer;
+  transition: background 0.5s ease 0s;
+}
+.areas_head:hover {
+  background: #777;
 }
 .areas_head .fa-caret-square-down {
   padding-left: 20px;
