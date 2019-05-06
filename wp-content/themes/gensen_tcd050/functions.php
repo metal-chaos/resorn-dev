@@ -988,8 +988,20 @@ function sort_pre_get_posts($wp_query)
             $wp_query->set('order', 'ASC');
 
         // 日時降順
-        } else {
+        } elseif ($_REQUEST['sort'] === 'date_desc') {
             $wp_query->set('orderby', 'date');
+            $wp_query->set('order', 'DESC');
+
+        // RESORNスコア昇順
+        } elseif ($_REQUEST['sort'] === 'r_score_asc') {
+            $wp_query->set('meta_key', 'resorn_score_field');
+            $wp_query->set('orderby', 'meta_value_num');
+            $wp_query->set('order', 'ASC');
+
+        // RESORNスコア降順
+        } elseif ($_REQUEST['sort'] === 'r_score_desc') {
+            $wp_query->set('meta_key', 'resorn_score_field');
+            $wp_query->set('orderby', 'meta_value_num');
             $wp_query->set('order', 'DESC');
         }
     }

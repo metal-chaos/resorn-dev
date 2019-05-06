@@ -21,7 +21,7 @@
     }
 
     // sort
-    if (!empty($_REQUEST['sort']) && in_array($_REQUEST['sort'], array('date_asc', 'date_desc', 'views'))) {
+    if (!empty($_REQUEST['sort']) && in_array($_REQUEST['sort'], array('date_asc', 'date_desc', 'views', 'r_score_asc', 'r_score_desc'))) {
         $sort = $_REQUEST['sort'];
     } else {
         $sort = 'date_desc';
@@ -145,6 +145,18 @@
           <?php if ($sort == 'views') {
     echo ' class="active"';
 } ?>><?php _e('Large number of views', 'tcd-w'); ?></a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'r_score_asc', $sort_base_url)); ?>"
+          <?php if ($sort == 'r_score_asc') {
+    echo ' class="active"';
+} ?>>RESORNスコアが高い順</a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'r_score_desc', $sort_base_url)); ?>"
+          <?php if ($sort == 'r_score_desc') {
+    echo ' class="active"';
+} ?>>RESORNスコアが低い順</a>
       </dd>
     </dl>
 
