@@ -150,13 +150,13 @@
           href="<?php echo esc_attr(add_query_arg('sort', 'r_score_asc', $sort_base_url)); ?>"
           <?php if ($sort == 'r_score_asc') {
     echo ' class="active"';
-} ?>>RESORNスコアが高い順</a>
+} ?>>RESORNスコアが低い順</a>
       </dd>
       <dd><a
           href="<?php echo esc_attr(add_query_arg('sort', 'r_score_desc', $sort_base_url)); ?>"
           <?php if ($sort == 'r_score_desc') {
     echo ' class="active"';
-} ?>>RESORNスコアが低い順</a>
+} ?>>RESORNスコアが高い順</a>
       </dd>
     </dl>
 
