@@ -21,7 +21,7 @@
     }
 
     // sort
-    if (!empty($_REQUEST['sort']) && in_array($_REQUEST['sort'], array('date_asc', 'date_desc', 'views', 'r_score_asc', 'r_score_desc'))) {
+    if (!empty($_REQUEST['sort']) && in_array($_REQUEST['sort'], array('date_asc', 'date_desc', 'views', 'r_score_asc', 'r_score_desc', 'int_salary_asc', 'int_salary_desc'))) {
         $sort = $_REQUEST['sort'];
     } else {
         $sort = 'date_desc';
@@ -157,6 +157,18 @@
           <?php if ($sort == 'r_score_desc') {
     echo ' class="active"';
 } ?>>RESORNスコアが高い順</a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'int_salary_asc', $sort_base_url)); ?>"
+          <?php if ($sort == 'int_salary_asc') {
+    echo ' class="active"';
+} ?>>給与が低い順</a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'int_salary_desc', $sort_base_url)); ?>"
+          <?php if ($sort == 'int_salary_desc') {
+    echo ' class="active"';
+} ?>>給与が高い順</a>
       </dd>
     </dl>
 

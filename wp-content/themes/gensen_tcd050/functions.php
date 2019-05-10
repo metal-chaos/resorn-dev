@@ -887,78 +887,78 @@ function custom_comments($comment, $args, $depth)
     } else {
         echo 'guest-comment';
     } ?>" id="comment-<?php comment_ID() ?>">
-	<div class="comment-meta clearfix">
-		<div class="comment-meta-left">
-			<?php if (function_exists('get_avatar') && get_option('show_avatars')) {
+    <div class="comment-meta clearfix">
+        <div class="comment-meta-left">
+            <?php if (function_exists('get_avatar') && get_option('show_avatars')) {
         echo get_avatar($comment, 35);
     } ?>
 
-			<ul class="comment-name-date">
-				<li class="comment-name">
-					<?php if (get_comment_author_url()) : ?>
-					<a id="commentauthor-<?php comment_ID() ?>"
-						class="url <?php if ($comment->comment_author_email == get_the_author_meta('email')) {
+            <ul class="comment-name-date">
+                <li class="comment-name">
+                    <?php if (get_comment_author_url()) : ?>
+                    <a id="commentauthor-<?php comment_ID() ?>"
+                        class="url <?php if ($comment->comment_author_email == get_the_author_meta('email')) {
         echo 'admin-url';
     } else {
         echo 'guest-url';
     } ?>" href="<?php comment_author_url() ?>"
-						rel="nofollow">
-						<?php else : ?>
-						<span
-							id="commentauthor-<?php comment_ID() ?>">
-							<?php endif; ?>
+                        rel="nofollow">
+                        <?php else : ?>
+                        <span
+                            id="commentauthor-<?php comment_ID() ?>">
+                            <?php endif; ?>
 
-							<?php comment_author(); ?>
+                            <?php comment_author(); ?>
 
-							<?php if (get_comment_author_url()) : ?>
-					</a>
-					<?php else : ?>
-					</span>
-					<?php endif; ?>
-				</li>
-				<li class="comment-date"><time
-						datetime="<?php comment_time('c'); ?>"><?php echo get_comment_time(__('F jS, Y', 'tcd-w')); ?></time>
-				</li>
-			</ul>
-		</div>
+                            <?php if (get_comment_author_url()) : ?>
+                    </a>
+                    <?php else : ?>
+                    </span>
+                    <?php endif; ?>
+                </li>
+                <li class="comment-date"><time
+                        datetime="<?php comment_time('c'); ?>"><?php echo get_comment_time(__('F jS, Y', 'tcd-w')); ?></time>
+                </li>
+            </ul>
+        </div>
 
-		<ul class="comment-act">
-			<?php if (function_exists('comment_reply_link')) {
+        <ul class="comment-act">
+            <?php if (function_exists('comment_reply_link')) {
         if (get_option('thread_comments') == '1') {
             ?>
-			<li class="comment-reply"><?php comment_reply_link(array_merge($args, array('add_below' => 'comment-content', 'depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => '<span><span>'.__('REPLY', 'tcd-w').'</span></span>'))) ?>
-			</li>
-			<?php
+            <li class="comment-reply"><?php comment_reply_link(array_merge($args, array('add_below' => 'comment-content', 'depth' => $depth, 'max_depth' => $args['max_depth'], 'reply_text' => '<span><span>'.__('REPLY', 'tcd-w').'</span></span>'))) ?>
+            </li>
+            <?php
         } else {
             ?>
-			<li class="comment-reply"><a href="javascript:void(0);"
-					onclick="MGJS_CMT.reply('commentauthor-<?php comment_ID() ?>', 'comment-<?php comment_ID() ?>', 'comment');"><?php _e('REPLY', 'tcd-w'); ?></a>
-			</li>
-			<?php
+            <li class="comment-reply"><a href="javascript:void(0);"
+                    onclick="MGJS_CMT.reply('commentauthor-<?php comment_ID() ?>', 'comment-<?php comment_ID() ?>', 'comment');"><?php _e('REPLY', 'tcd-w'); ?></a>
+            </li>
+            <?php
         }
     } else {
         ?>
-			<li class="comment-reply"><a href="javascript:void(0);"
-					onclick="MGJS_CMT.reply('commentauthor-<?php comment_ID() ?>', 'comment-<?php comment_ID() ?>', 'comment');"><?php _e('REPLY', 'tcd-w'); ?></a>
-			</li>
-			<?php
+            <li class="comment-reply"><a href="javascript:void(0);"
+                    onclick="MGJS_CMT.reply('commentauthor-<?php comment_ID() ?>', 'comment-<?php comment_ID() ?>', 'comment');"><?php _e('REPLY', 'tcd-w'); ?></a>
+            </li>
+            <?php
     } ?>
-			<li class="comment-quote"><a href="javascript:void(0);"
-					onclick="MGJS_CMT.quote('commentauthor-<?php comment_ID() ?>', 'comment-<?php comment_ID() ?>', 'comment-content-<?php comment_ID() ?>', 'comment');"><?php _e('QUOTE', 'tcd-w'); ?></a>
-			</li>
-			<?php edit_comment_link(__('EDIT', 'tcd-w'), '<li class="comment-edit">', '</li>'); ?>
-		</ul>
+            <li class="comment-quote"><a href="javascript:void(0);"
+                    onclick="MGJS_CMT.quote('commentauthor-<?php comment_ID() ?>', 'comment-<?php comment_ID() ?>', 'comment-content-<?php comment_ID() ?>', 'comment');"><?php _e('QUOTE', 'tcd-w'); ?></a>
+            </li>
+            <?php edit_comment_link(__('EDIT', 'tcd-w'), '<li class="comment-edit">', '</li>'); ?>
+        </ul>
 
-	</div>
-	<div class="comment-content post_content"
-		id="comment-content-<?php comment_ID() ?>">
-		<?php if ($comment->comment_approved == '0') : ?>
-		<span class="comment-note"><?php _e('Your comment is awaiting moderation.', 'tcd-w'); ?></span>
-		<?php endif; ?>
-		<?php comment_text(); ?>
-	</div>
+    </div>
+    <div class="comment-content post_content"
+        id="comment-content-<?php comment_ID() ?>">
+        <?php if ($comment->comment_approved == '0') : ?>
+        <span class="comment-note"><?php _e('Your comment is awaiting moderation.', 'tcd-w'); ?></span>
+        <?php endif; ?>
+        <?php comment_text(); ?>
+    </div>
 
-	<?php
+    <?php
 }
 
 // ソート処理 pre_get_posts
@@ -1003,13 +1003,25 @@ function sort_pre_get_posts($wp_query)
             $wp_query->set('meta_key', 'resorn_score_field');
             $wp_query->set('orderby', 'meta_value_num');
             $wp_query->set('order', 'DESC');
+
+        // 給与昇順
+        } elseif ($_REQUEST['sort'] === 'int_salary_asc') {
+            $wp_query->set('meta_key', 'int_salary_field');
+            $wp_query->set('orderby', 'meta_value_num');
+            $wp_query->set('order', 'ASC');
+
+        // 給与降順
+        } elseif ($_REQUEST['sort'] === 'int_salary_desc') {
+            $wp_query->set('meta_key', 'resorn_score_field');
+            $wp_query->set('orderby', 'meta_value_num');
+            $wp_query->set('order', 'DESC');
         }
     }
 }
 add_action('pre_get_posts', 'sort_pre_get_posts');
 
 ?>
-	<?php
+    <?php
 // アイコン（寮）のショートコード
 function icon_dormitory_fi()
 {
@@ -1155,7 +1167,7 @@ function company_image_get()
 }
 add_shortcode('company_image', 'company_image_get');
 ?>
-	<?php
+    <?php
 // カテゴリとタグページのtitleを変更したい
 function title_resort($title)
 {
@@ -1172,7 +1184,7 @@ function title_resort($title)
 add_filter('wp_title', 'title_resort');
 ?>
 
-	<?php
+    <?php
 // 検索結果及び４０４ページをnoindexにする
 function add_noindex_action()
 {
@@ -1183,7 +1195,7 @@ function add_noindex_action()
 add_action('wp_head', 'add_noindex_action', 4);
 ?>
 
-	<?php
+    <?php
 // RESORN（リゾーン）スコアを算出する
 function resorn_score()
 {
