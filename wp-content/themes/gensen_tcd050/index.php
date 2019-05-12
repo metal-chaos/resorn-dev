@@ -18,10 +18,10 @@
   }
 
   // sort
-  if (!empty($_REQUEST['sort']) && in_array($_REQUEST['sort'], array('date_asc', 'date_desc', 'views', 'r_score_asc', 'r_score_desc', 'int_salary_asc', 'int_salary_desc'))) {
+  if (!empty($_REQUEST['sort']) && in_array($_REQUEST['sort'], array('r_score_desc', 'r_score_asc', 'int_salary_desc', 'int_salary_asc', 'date_asc', 'date_desc', 'views'))) {
       $sort = $_REQUEST['sort'];
   } else {
-      $sort = 'date_desc';
+      $sort = 'r_score_desc';
   }
   $sort_base_url = remove_query_arg('sort');
   $sort_base_url = preg_replace('#/page/\d+#', '', $sort_base_url);
@@ -102,6 +102,30 @@
       <dt><?php _e('Sort condition', 'tcd-w'); ?>
       </dt>
       <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'r_score_desc', $sort_base_url)); ?>"
+          <?php if ($sort == 'r_score_desc') {
+        echo ' class="active"';
+    } ?>>RESORNスコアが高い順</a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'r_score_asc', $sort_base_url)); ?>"
+          <?php if ($sort == 'r_score_asc') {
+        echo ' class="active"';
+    } ?>>RESORNスコアが低い順</a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'int_salary_desc', $sort_base_url)); ?>"
+          <?php if ($sort == 'int_salary_desc') {
+    echo ' class="active"';
+} ?>>給与が高い順</a>
+      </dd>
+      <dd><a
+          href="<?php echo esc_attr(add_query_arg('sort', 'int_salary_asc', $sort_base_url)); ?>"
+          <?php if ($sort == 'int_salary_asc') {
+    echo ' class="active"';
+} ?>>給与が低い順</a>
+      </dd>
+      <dd><a
           href="<?php echo esc_attr(add_query_arg('sort', 'date_desc', $sort_base_url)); ?>"
           <?php if ($sort == 'date_desc') {
         echo ' class="active"';
@@ -118,30 +142,6 @@
           <?php if ($sort == 'views') {
         echo ' class="active"';
     } ?>><?php _e('Large number of views', 'tcd-w'); ?></a>
-      </dd>
-      <dd><a
-          href="<?php echo esc_attr(add_query_arg('sort', 'r_score_asc', $sort_base_url)); ?>"
-          <?php if ($sort == 'r_score_asc') {
-        echo ' class="active"';
-    } ?>>RESORNスコアが低い順</a>
-      </dd>
-      <dd><a
-          href="<?php echo esc_attr(add_query_arg('sort', 'r_score_desc', $sort_base_url)); ?>"
-          <?php if ($sort == 'r_score_desc') {
-        echo ' class="active"';
-    } ?>>RESORNスコアが高い順</a>
-      </dd>
-      <dd><a
-          href="<?php echo esc_attr(add_query_arg('sort', 'int_salary_asc', $sort_base_url)); ?>"
-          <?php if ($sort == 'int_salary_asc') {
-    echo ' class="active"';
-} ?>>給与が低い順</a>
-      </dd>
-      <dd><a
-          href="<?php echo esc_attr(add_query_arg('sort', 'int_salary_desc', $sort_base_url)); ?>"
-          <?php if ($sort == 'int_salary_desc') {
-    echo ' class="active"';
-} ?>>給与が高い順</a>
       </dd>
     </dl>
 

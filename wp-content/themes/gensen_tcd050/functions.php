@@ -961,6 +961,53 @@ function custom_comments($comment, $args, $depth)
     <?php
 }
 
+// RESORN（リゾーン）スコアを算出する
+function resorn_score()
+{
+    $sum_resorn_score = 0;
+    $key1 = get_post_meta(get_the_ID(), 'icon_dormitory_field', true);
+    if ($key1 == "TRUE") {
+        $sum_resorn_score = $sum_resorn_score + 1;
+    }
+    $key2 = get_post_meta(get_the_ID(), 'icon_campaign_field', true);
+    if ($key2 == "TRUE") {
+        $sum_resorn_score = $sum_resorn_score + 1;
+    }
+    $key3 = get_post_meta(get_the_ID(), 'icon_meal_field', true);
+    if ($key3 == "TRUE") {
+        $sum_resorn_score = $sum_resorn_score + 1;
+    }
+    $key4 = get_post_meta(get_the_ID(), 'icon_transportationFee_field', true);
+    if ($key4 == "TRUE") {
+        $sum_resorn_score = $sum_resorn_score + 1;
+    }
+    $key5 = get_post_meta(get_the_ID(), 'icon_wifi_field', true);
+    if ($key5 == "TRUE") {
+        $sum_resorn_score = $sum_resorn_score + 1;
+    }
+    $key6 = get_post_meta(get_the_ID(), 'icon_spa_field', true);
+    if ($key6 == "TRUE") {
+        $sum_resorn_score = $sum_resorn_score + 1;
+    }
+    if ($terms = get_the_terms($post->ID, 'salary')) {
+        foreach ($terms as $term) {
+            $key7 = esc_html($term->slug);
+            if ($key7 == "801-900" || $key7 == "901-1000") {
+                $sum_resorn_score = $sum_resorn_score + 1;
+            } elseif ($key7 == "1001-1100" || $key7 == "1101-1200") {
+                $sum_resorn_score = $sum_resorn_score + 2;
+            } elseif ($key7 == "1201-1300" || $key7 == "1301-1400") {
+                $sum_resorn_score = $sum_resorn_score + 3;
+            } elseif ($key7 == "1400") {
+                $sum_resorn_score = $sum_resorn_score + 4;
+            }
+        }
+    }
+    return $sum_resorn_score;
+}
+add_shortcode('sh_r_score', 'resorn_score', 2);
+
+
 // ソート処理 pre_get_posts
 function sort_pre_get_posts($wp_query)
 {
@@ -1015,7 +1062,18 @@ function sort_pre_get_posts($wp_query)
             $wp_query->set('meta_key', 'resorn_score_field');
             $wp_query->set('orderby', 'meta_value_num');
             $wp_query->set('order', 'DESC');
+        // RESORNスコア昇順
+        } elseif ($_REQUEST['sort'] === 'r_score_asc') {
+            $wp_query->set('meta_key', 'resorn_score_field');
+            $wp_query->set('orderby', 'meta_value_num');
+            $wp_query->set('order', 'ASC');
         }
+    }
+    // デフォルトのソート
+    if (!isset($_REQUEST['sort'])) {
+        $wp_query->set('meta_key', 'resorn_score_field');
+        $wp_query->set('orderby', 'meta_value_num');
+        $wp_query->set('order', 'DESC');
     }
 }
 add_action('pre_get_posts', 'sort_pre_get_posts');
@@ -1193,51 +1251,3 @@ function add_noindex_action()
     }
 }
 add_action('wp_head', 'add_noindex_action', 4);
-?>
-
-    <?php
-// RESORN（リゾーン）スコアを算出する
-function resorn_score()
-{
-    $sum_resorn_score = 0;
-    $key1 = get_post_meta(get_the_ID(), 'icon_dormitory_field', true);
-    if ($key1 == "TRUE") {
-        $sum_resorn_score = $sum_resorn_score + 1;
-    }
-    $key2 = get_post_meta(get_the_ID(), 'icon_campaign_field', true);
-    if ($key2 == "TRUE") {
-        $sum_resorn_score = $sum_resorn_score + 1;
-    }
-    $key3 = get_post_meta(get_the_ID(), 'icon_meal_field', true);
-    if ($key3 == "TRUE") {
-        $sum_resorn_score = $sum_resorn_score + 1;
-    }
-    $key4 = get_post_meta(get_the_ID(), 'icon_transportationFee_field', true);
-    if ($key4 == "TRUE") {
-        $sum_resorn_score = $sum_resorn_score + 1;
-    }
-    $key5 = get_post_meta(get_the_ID(), 'icon_wifi_field', true);
-    if ($key5 == "TRUE") {
-        $sum_resorn_score = $sum_resorn_score + 1;
-    }
-    $key6 = get_post_meta(get_the_ID(), 'icon_spa_field', true);
-    if ($key6 == "TRUE") {
-        $sum_resorn_score = $sum_resorn_score + 1;
-    }
-    if ($terms = get_the_terms($post->ID, 'salary')) {
-        foreach ($terms as $term) {
-            $key7 = esc_html($term->slug);
-            if ($key7 == "801-900" || $key7 == "901-1000") {
-                $sum_resorn_score = $sum_resorn_score + 1;
-            } elseif ($key7 == "1001-1100" || $key7 == "1101-1200") {
-                $sum_resorn_score = $sum_resorn_score + 2;
-            } elseif ($key7 == "1201-1300" || $key7 == "1301-1400") {
-                $sum_resorn_score = $sum_resorn_score + 3;
-            } elseif ($key7 == "1400") {
-                $sum_resorn_score = $sum_resorn_score + 4;
-            }
-        }
-    }
-    return $sum_resorn_score;
-}
-add_shortcode('sh_r_score', 'resorn_score');
