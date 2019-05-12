@@ -1011,6 +1011,10 @@ add_shortcode('sh_r_score', 'resorn_score', 2);
 // ソート処理 pre_get_posts
 function sort_pre_get_posts($wp_query)
 {
+
+    // カスタム検索用グローバル変数
+    global $custom_search_vars;
+
     // 管理画面は終了
     if (is_admin()) {
         return;
@@ -1069,8 +1073,9 @@ function sort_pre_get_posts($wp_query)
             $wp_query->set('order', 'ASC');
         }
     }
+
     // デフォルトのソート
-    if (!isset($_REQUEST['sort'])) {
+    if (!isset($_REQUEST['sort']) && $wp_query->is_archive() || (is_search() || !empty( $custom_search_vars ))) {
         $wp_query->set('meta_key', 'resorn_score_field');
         $wp_query->set('orderby', 'meta_value_num');
         $wp_query->set('order', 'DESC');
