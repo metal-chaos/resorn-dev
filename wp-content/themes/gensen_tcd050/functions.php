@@ -1075,7 +1075,7 @@ function sort_pre_get_posts($wp_query)
     }
 
     // デフォルトのソート
-    if (!isset($_REQUEST['sort']) && $wp_query->is_archive() || (is_search() || !empty( $custom_search_vars ))) {
+    if (!isset($_REQUEST['sort']) && $wp_query->is_archive() || (is_search() || !empty($custom_search_vars))) {
         $wp_query->set('meta_key', 'resorn_score_field');
         $wp_query->set('orderby', 'meta_value_num');
         $wp_query->set('order', 'DESC');
@@ -1083,8 +1083,6 @@ function sort_pre_get_posts($wp_query)
 }
 add_action('pre_get_posts', 'sort_pre_get_posts');
 
-?>
-    <?php
 // アイコン（寮）のショートコード
 function icon_dormitory_fi()
 {
@@ -1229,8 +1227,7 @@ function company_image_get()
     return $company_image;
 }
 add_shortcode('company_image', 'company_image_get');
-?>
-    <?php
+
 // カテゴリとタグページのtitleを変更したい
 function title_resort($title)
 {
@@ -1245,9 +1242,7 @@ function title_resort($title)
     }
 }
 add_filter('wp_title', 'title_resort');
-?>
 
-    <?php
 // 検索結果及び４０４ページをnoindexにする
 function add_noindex_action()
 {
@@ -1256,3 +1251,80 @@ function add_noindex_action()
     }
 }
 add_action('wp_head', 'add_noindex_action', 4);
+
+// カテゴリー別の掲載件数を算出する
+function number_of_job_offers($term_id)
+{
+    $args = array(
+        'post_type' => 'post',
+        'cat' => $term_id,
+        'posts_per_page' => -1,
+    );
+
+    $the_query = new WP_Query($args);
+    wp_reset_postdata();
+    $post_count  = $the_query->post_count;
+    return $post_count;
+}
+
+// カテゴリー別の平均RESORNスコアを表示する
+function average_resorn_score($term_id)
+{
+    $args = array(
+        'post_type' => 'post',
+        'cat' => $term_id,
+        'posts_per_page' => -1,
+    );
+
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) : $the_query->the_post();
+
+        /* ループ内の記述 */
+        $sum_resorn_score += get_field('resorn_score_field');
+
+        endwhile;
+    }
+    wp_reset_postdata();
+    $post_count  = $the_query->post_count;
+    $average_resorn_score = $sum_resorn_score / $post_count;
+    return round($average_resorn_score, 1);
+}
+
+// カテゴリー別の平均時給を表示する
+function average_salary($term_id)
+{
+    $args = array(
+        'post_type' => 'post',
+        'cat' => $term_id,
+        'posts_per_page' => -1,
+    );
+
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) : $the_query->the_post();
+
+        /* ループ内の記述 */
+        $sum_salary += get_field('int_salary_field');
+
+        endwhile;
+    }
+    wp_reset_postdata();
+    $post_count  = $the_query->post_count;
+    $average_salary = $sum_salary / $post_count;
+    return number_format(round($average_salary, 0));
+}
+
+// 全ての掲載件数を取得する
+function number_of_all_job_offers($term_id)
+{
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+    );
+
+    $the_query = new WP_Query($args);
+    wp_reset_postdata();
+    $post_count  = $the_query->post_count;
+    return $post_count;
+}
