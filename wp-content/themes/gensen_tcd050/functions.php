@@ -1257,6 +1257,7 @@ function number_of_job_offers($term_id)
 {
     $args = array(
         'post_type' => 'post',
+        'post_status' => 'publish',
         'cat' => $term_id,
         'posts_per_page' => -1,
     );
@@ -1272,6 +1273,7 @@ function average_resorn_score($term_id)
 {
     $args = array(
         'post_type' => 'post',
+        'post_status' => 'publish',
         'cat' => $term_id,
         'posts_per_page' => -1,
     );
@@ -1280,8 +1282,11 @@ function average_resorn_score($term_id)
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) : $the_query->the_post();
 
-        /* ループ内の記述 */
-        $sum_resorn_score += get_field('resorn_score_field');
+            /* ループ内の記述 */
+            $value = get_field('resorn_score_field');
+            if ($value) {
+                $sum_resorn_score += $value;
+            }
 
         endwhile;
     }
@@ -1296,6 +1301,7 @@ function average_salary($term_id)
 {
     $args = array(
         'post_type' => 'post',
+        'post_status' => 'publish',
         'cat' => $term_id,
         'posts_per_page' => -1,
     );
@@ -1304,8 +1310,11 @@ function average_salary($term_id)
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) : $the_query->the_post();
 
-        /* ループ内の記述 */
-        $sum_salary += get_field('int_salary_field');
+            /* ループ内の記述 */
+            $value = get_field('int_salary_field');
+            if ($value) {
+                $sum_salary += $value;
+            }
 
         endwhile;
     }
@@ -1343,8 +1352,11 @@ function average_salary_all_job_offers()
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) : $the_query->the_post();
 
-        /* ループ内の記述 */
-        $sum_salary += get_field('int_salary_field');
+            /* ループ内の記述 */
+            $value = get_field('int_salary_field');
+            if ($value) {
+                $sum_salary += $value;
+            }
 
         endwhile;
     }

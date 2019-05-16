@@ -22,7 +22,8 @@
                             <img class="top-icon"
                                 src="http://dev-resorn-xx.xyz/wp-content/uploads/top/three-features/japan.png">
                         </div>
-                        <p>北は北海道から南は沖縄まで、日本全国の地域検索に対応しています。スキーや温泉、南国の海など目的別の求人探しができる優れた検索機能を有しています。<?php echo average_salary_all_job_offers(); ?>
+                        <p>掲載件数：<?php echo number_of_all_job_offers(); ?>
+                        <p>平均時給：<?php echo average_salary_all_job_offers(); ?>
                         </p>
                     </div>
                     <div class="post_col post_col-3">
