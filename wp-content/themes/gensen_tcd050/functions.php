@@ -1316,10 +1316,11 @@ function average_salary($term_id)
 }
 
 // 全ての掲載件数を取得する
-function number_of_all_job_offers($term_id)
+function number_of_all_job_offers()
 {
     $args = array(
         'post_type' => 'post',
+        'post_status' => 'publish',
         'posts_per_page' => -1,
     );
 
@@ -1327,4 +1328,28 @@ function number_of_all_job_offers($term_id)
     wp_reset_postdata();
     $post_count  = $the_query->post_count;
     return $post_count;
+}
+
+// 全ての時給の平均を取得する
+function average_salary_all_job_offers()
+{
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+    );
+
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) : $the_query->the_post();
+
+        /* ループ内の記述 */
+        $sum_salary += get_field('int_salary_field');
+
+        endwhile;
+    }
+    wp_reset_postdata();
+    $post_count  = $the_query->post_count;
+    $average_salary = $sum_salary / $post_count;
+    return number_format(round($average_salary, 0));
 }
