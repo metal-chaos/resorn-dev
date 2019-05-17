@@ -1282,11 +1282,11 @@ function average_resorn_score($term_id)
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) : $the_query->the_post();
 
-            /* ループ内の記述 */
-            $value = get_field('resorn_score_field');
-            if ($value) {
-                $sum_resorn_score += $value;
-            }
+        /* ループ内の記述 */
+        $value = get_field('resorn_score_field');
+        if ($value) {
+            $sum_resorn_score += $value;
+        }
 
         endwhile;
     }
@@ -1310,11 +1310,11 @@ function average_salary($term_id)
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) : $the_query->the_post();
 
-            /* ループ内の記述 */
-            $value = get_field('int_salary_field');
-            if ($value) {
-                $sum_salary += $value;
-            }
+        /* ループ内の記述 */
+        $value = get_field('int_salary_field');
+        if ($value) {
+            $sum_salary += $value;
+        }
 
         endwhile;
     }
@@ -1352,11 +1352,11 @@ function average_salary_all_job_offers()
     if ($the_query->have_posts()) {
         while ($the_query->have_posts()) : $the_query->the_post();
 
-            /* ループ内の記述 */
-            $value = get_field('int_salary_field');
-            if ($value) {
-                $sum_salary += $value;
-            }
+        /* ループ内の記述 */
+        $value = get_field('int_salary_field');
+        if ($value) {
+            $sum_salary += $value;
+        }
 
         endwhile;
     }
@@ -1364,4 +1364,31 @@ function average_salary_all_job_offers()
     $post_count  = $the_query->post_count;
     $average_salary = $sum_salary / $post_count;
     return number_format(round($average_salary, 0));
+}
+
+// 最高時給を取得する
+function top_of_salary()
+{
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => 1,
+        'meta_key' => 'int_salary_field',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC',
+    );
+
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) : $the_query->the_post();
+
+        /* ループ内の記述 */
+        $value = [
+            'salary' => number_format(get_field('int_salary_field')),
+            'salary_link' => get_permalink(),
+        ];
+        endwhile;
+    }
+    wp_reset_postdata();
+    return $value;
 }

@@ -1,4 +1,7 @@
-<?php $upload_dir = wp_upload_dir(); ?>
+<?php
+$upload_dir = wp_upload_dir();
+$top_of_salary = top_of_salary();
+?>
 
 <div class="cb_content cb_content-wysiwyg">
     <div class="inner">
@@ -22,8 +25,12 @@
                             <img class="top-icon"
                                 src="http://dev-resorn-xx.xyz/wp-content/uploads/top/three-features/japan.png">
                         </div>
-                        <p>掲載件数：<?php echo number_of_all_job_offers(); ?>
-                        <p>平均時給：<?php echo average_salary_all_job_offers(); ?>
+                        <p>掲載件数：<?php echo number_of_all_job_offers(); ?>件
+                        </p>
+                        <p>平均時給：<?php echo average_salary_all_job_offers(); ?>円
+                        </p>
+                        <p>最高時給：<?php echo $top_of_salary['salary']; ?>円。<a href="<?php echo $top_of_salary['salary_link']; ?>">こちらです</a>
+                        </p>
                         </p>
                     </div>
                     <div class="post_col post_col-3">
