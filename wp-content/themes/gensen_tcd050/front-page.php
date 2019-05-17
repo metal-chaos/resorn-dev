@@ -547,11 +547,14 @@
 ?>
         </div>
     </div>
-    <!-- 3つの特徴 -->
-    <?php require_once "front-page/three-features.php"; ?>
-
     <!-- 本日のRESORN（リゾーン） -->
     <?php require_once "front-page/todays-resorn.php"; ?>
+
+    <!-- RESORNスコアTOP5求人 -->
+    <?php require_once "front-page/top5-of-resorn-score.php"; ?>
+
+    <!-- 3つの特徴 -->
+    <?php require_once "front-page/three-features.php"; ?>
 
     <?php
                     endif;

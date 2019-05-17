@@ -1392,3 +1392,44 @@ function top_of_salary()
     wp_reset_postdata();
     return $value;
 }
+
+// RESORNスコアTOP5求人
+function top5_of_resorn_score()
+{
+    // 求人の取得、RESORNスコア、給与の順で並べ替え
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'posts_per_page' => 5,
+        'orderby' => array(
+            'meta_resorn_score' => 'DESC',
+            'meta_salary' => 'DESC',
+        ),
+        'meta_query' => array(
+            'relation' => 'AND',
+            'meta_resorn_score' => array(
+                'key' => 'resorn_score_field',
+                'type' => 'numeric',
+            ),
+            'meta_salary' => array(
+                'key' => 'int_salary_field',
+                'type' => 'numeric',
+            ),
+        ),
+    );
+
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) : $the_query->the_post();
+
+        /* ループ内の記述 */
+        echo '<a href="' . get_permalink() . '">';
+        echo get_the_title() . '</br>';
+        echo '</a>';
+        echo get_field('occupation_field');
+
+        endwhile;
+    }
+    wp_reset_postdata();
+    return $value;
+}
