@@ -1336,7 +1336,7 @@ function number_of_all_job_offers()
     $the_query = new WP_Query($args);
     wp_reset_postdata();
     $post_count  = $the_query->post_count;
-    return $post_count;
+    return number_format($post_count);
 }
 
 // 全ての時給の平均を取得する
