@@ -13,33 +13,21 @@ $top_of_salary = top_of_salary();
                     <div class="post_col post_col-3">
                         <h3>掲載件数</h3>
                         <div class="top-icons">
-                            <img class="top-icon"
-                                src="http://dev-resorn-xx.xyz/wp-content/uploads/top/three-features/number-of-recruits.png">
+                            <p><?php echo number_of_all_job_offers(); ?>件</p>
                         </div>
-                        <p>RESORN（リゾーン）では、驚くことに5,000件以上もの求人を掲載しています。トップレベルの求人数を誇るRESORNで仕事を探してみましょう。
-                        </p>
                     </div>
                     <div class="post_col post_col-3">
                         <h3>平均時給</h3>
                         <div class="top-icons">
-                            <img class="top-icon"
-                                src="http://dev-resorn-xx.xyz/wp-content/uploads/top/three-features/japan.png">
+                            <p><?php echo average_salary_all_job_offers(); ?>円</p>
                         </div>
-                        <p>掲載件数：<?php echo number_of_all_job_offers(); ?>件
-                        </p>
-                        <p>平均時給：<?php echo average_salary_all_job_offers(); ?>円
-                        </p>
-                        <p>最高時給：<?php echo $top_of_salary['salary']; ?>円。<a
-                                href="<?php echo $top_of_salary['salary_link']; ?>">こちらです</a>
-                        </p>
                     </div>
                     <div class="post_col post_col-3">
                         <h3>最高時給</h3>
                         <div class="top-icons">
-                            <img class="top-icon"
-                                src="http://dev-resorn-xx.xyz/wp-content/uploads/top/three-features/type-of-salary.png">
+                            <p>最高時給：<?php echo $top_of_salary['salary']; ?>円。<a
+                                href="<?php echo $top_of_salary['salary_link']; ?>">こちらです</a></p>
                         </div>
-                        <p>時給・月給の給料別検索に対応しています。時給800円未満から1,400円以上まで、高機能な検索で満足できる価値を必ず提供します。</p>
                     </div>
                 </div>
             </div>

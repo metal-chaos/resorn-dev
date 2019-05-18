@@ -1330,14 +1330,13 @@ a.guest-url { text-decoration:underline; }
 }
 /* スライダーキャプション */
 #header_slider .caption {
-  margin:auto;
-  padding:10px 60px 50px;
+  padding:0px 60px 23px;
   width:60%;
   max-height:100%;
   overflow:hidden;
   text-align:center;
+  margin-bottom: 100px;
   z-index:3;
-  -webkit-transform:translate3d(0,-50%,0); -moz-transform:translate3d(0,-50%,0); -ms-transform:translate3d(0,-50%,0); -o-transform:translate3d(0,-50%,0); transform:translate3d(0,-50%,0);
   -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;
 }
 #header_slider .caption .headline { margin:0; font-size:47px; line-height:1.4; color:#fff; }
@@ -1363,6 +1362,30 @@ a.guest-url { text-decoration:underline; }
 /* スライダーキャプションのアニメーション */
 #header_slider .caption > :nth-child(-n+3) {
   opacity:0;
+}
+/* 全求人情報の箇所 */
+#header_slider .top-information-cols {
+  width: 80%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-top: 20px;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 1px;
+}
+#header_slider .top-information-cols .col-3 {
+  flex: 0 1 calc(100% / 3);
+}
+#header_slider .top-information-cols .col-3 p {
+  font-size: 18px;
+  padding: 5px;
+  background: -webkit-linear-gradient(0deg, #fff, #ff758c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #header_slider .item.slick-active .caption > :nth-child(1),
 #header_slider.slider_video_mobile .caption > :nth-child(1) {

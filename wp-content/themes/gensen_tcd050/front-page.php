@@ -1,5 +1,6 @@
 <?php
     $dp_options = get_desing_plus_option();
+    $top_of_salary = top_of_salary();
 
     global $header_slider;
     $header_slider = array();
@@ -83,6 +84,23 @@
         } elseif ($dp_options['show_slider_button'.$i] == 1 && $dp_options['slider_button'.$i]) {
             echo '<div class="button">'.esc_html($dp_options['slider_button'.$i]).'</div>';
         } ?>
+                    <div class="top-information-cols">
+                        <div class="col-3">
+                            <div class="heading">掲載件数</div>
+                            <p><?php echo number_of_all_job_offers(); ?>件
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <div class="heading">平均時給</div>
+                            <p><?php echo average_salary_all_job_offers(); ?>円
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <div class="heading">最高時給</div>
+                            <p><?php echo $top_of_salary['salary']; ?>円
+                            </p>
+                        </div>
+                    </div>
                 </div><!-- END .caption -->
                 <div id="index_header_search">
                     <div class="inner">
