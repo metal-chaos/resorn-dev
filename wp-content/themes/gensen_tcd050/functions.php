@@ -1433,3 +1433,12 @@ function top5_of_resorn_score()
     wp_reset_postdata();
     return $value;
 }
+
+// RESORNスコアのStar Ratingのクラスの数値
+function change_resorn_score_format($resorn_score)
+{
+    if (preg_match('/^([1-9]\d*|0)\.(\d+)?$/', $resorn_score)) {
+        $resorn_score = strtr( $resorn_score , '.' , '-' );
+    }
+    return $resorn_score;
+}
