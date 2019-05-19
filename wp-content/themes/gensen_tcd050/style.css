@@ -1944,3 +1944,63 @@ img.archive_heading_banner {
 .archive_filter_tag {
   display: none;
 }
+/*--------------------
+star-rating
+--------------------*/
+.s-rating {
+    background-image: url(img/common/resorn-star-rating-bk.png);
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    background-size: 400px;
+    position: relative;
+}
+.s-rating.s-rating-5 {
+    background-position: 5px -465px;
+}
+.s-rating.s-rating-4-5 {
+    background-position: 5px -415px;
+}
+.s-rating.s-rating-4 {
+    background-position: 5px -371px;
+}
+.s-rating.s-rating-3-5 {
+    background-position: 5px -327px;
+}
+.s-rating.s-rating-3 {
+    background-position: 5px -282px;
+}
+.s-rating.s-rating-2-5 {
+    background-position: 5px -237px;
+}
+.s-rating.s-rating-2 {
+    background-position: 5px -194px;
+}
+.s-rating.s-rating-1-5 {
+    background-position: 5px -149px;
+}
+.s-rating.s-rating-1 {
+    background-position: 5px -104px;
+}
+.s-rating.s-rating-0-5 {
+    background-position: 5px -61px;
+}
+.s-rating.s-rating-0 {
+    background-position: 5px -16px;
+}
+.s-rating .s-text {
+    position: absolute;
+    top: 110px;
+    font-size: 16px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+    font-style: normal;
+}
+.s-rating .s-text-int {
+    font-style: normal;
+    color: #FF0F6F;
+}
