@@ -1426,10 +1426,22 @@ function top5_of_resorn_score()
         echo '<a href="' . get_permalink() . '">';
         echo get_the_title() . '</br>';
         echo '</a>';
-        echo get_field('occupation_field');
+        echo get_field('occupation_field') . '、' . get_field('salary_field') . get_field('resorn_score_field');
 
         endwhile;
     }
     wp_reset_postdata();
     return $value;
 }
+
+// RESORNスコアを★で表す
+/*
+function resorn_score_to_star ($resorn_score)
+{
+    if (is_empty($resorn_score)) {
+        $star = '-';
+    } elseif ($resorn_score) {
+
+    }
+}
+*/
