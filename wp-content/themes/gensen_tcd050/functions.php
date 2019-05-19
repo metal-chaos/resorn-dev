@@ -1433,15 +1433,3 @@ function top5_of_resorn_score()
     wp_reset_postdata();
     return $value;
 }
-
-// RESORNスコアを★で表す
-/*
-function resorn_score_to_star ($resorn_score)
-{
-    if (is_empty($resorn_score)) {
-        $star = '-';
-    } elseif ($resorn_score) {
-
-    }
-}
-*/
