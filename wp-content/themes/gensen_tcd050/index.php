@@ -158,7 +158,10 @@
             <div class="r_score_title">RESORNスコア</div>
             <div class="r_score_text"
               id="score<?php echo esc_html($post->resorn_score_field); ?>">
-              <?php echo esc_html($post->resorn_score_field); ?>
+              <i
+                class="s-rating s-rating-<?php echo esc_html(change_resorn_score_format($post->resorn_score_field)); ?>">
+                <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
+              </i>
             </div>
             <!-- <div class="image">
       <?php /*

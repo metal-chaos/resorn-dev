@@ -462,7 +462,7 @@ ul.page-numbers li.disable { display:none; }
   font-size: 7em;
   text-align: center;
   height: 280px;
-  background-color: #f7f7f7;
+  border: 1px solid #ddd;
 }
 #post_list2 .article .r_score_title {
   font-size: 24px;
@@ -1948,7 +1948,7 @@ img.archive_heading_banner {
 star-rating
 --------------------*/
 .s-rating {
-    background-image: url(img/common/resorn-star-rating-bk.png);
+    background-image: url(img/common/resorn-star-rating.png);
     width: 100%;
     height: 50px;
     display: inline-block;

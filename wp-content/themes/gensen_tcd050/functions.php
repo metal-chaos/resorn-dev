@@ -1438,7 +1438,7 @@ function top5_of_resorn_score()
 function change_resorn_score_format($resorn_score)
 {
     if (preg_match('/^([1-9]\d*|0)\.(\d+)?$/', $resorn_score)) {
-        $resorn_score = strtr( $resorn_score , '.' , '-' );
+        $resorn_score = strtr($resorn_score, '.', '-');
     }
     return $resorn_score;
 }
