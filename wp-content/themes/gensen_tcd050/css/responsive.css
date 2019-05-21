@@ -316,7 +316,8 @@
   #header_slider .caption {
     padding:0;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
   #header_slider .slick-arrow { display:none !important; }
   #header_slider .item {
@@ -332,6 +333,13 @@
   /* トップページの2カラムヘッダー */
   #header_slider .two-culumns {
     flex-wrap: wrap;
+  }
+  #header_slider .top-information-cols {
+    margin-top: 10px;
+  }
+  #header_slider .item.slick-active .caption > :nth-child(3), #header_slider.slider_video_mobile .caption > :nth-child(3) {
+    -webkit-animation: sliderCaptionAnimation 1s ease forwards 1s;
+    animation: sliderCaptionAnimation 1s ease forwards 1s;
   }
   /* コンテンツビルダー */
   .cb_content { margin:0 0 30px 0; }

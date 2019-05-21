@@ -229,17 +229,20 @@
             }
         }
      ?>
-            <div class="r_score_sp" id=score<?php echo resorn_score(); ?> >
-              <div class="r_score_title_sp">RESORNスコア</div>
-              <div class="r_score_text_sp"><span
-                  class="score<?php echo esc_html($post->resorn_score_field); ?>"><?php echo esc_html($post->resorn_score_field); ?></span>
-                （最高は10）</div>
-            </div>
+
             <table class="recruit_list">
               <tr>
                 <th>会社</th>
                 <td><img class="recruit_list_company"
                     src="<?php echo do_shortcode('[company_image]'); ?>">
+                </td>
+              </tr>
+              <tr class="pc-hidden">
+                <th>評価</th>
+                <td><i
+                    class="s-rating s-rating-<?php echo esc_html(change_resorn_score_format($post->resorn_score_field)); ?> s-offers-sp">
+                      <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
+                  </i>
                 </td>
               </tr>
               <tr>
