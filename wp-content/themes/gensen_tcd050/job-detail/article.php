@@ -38,7 +38,11 @@ $upload_dir = wp_upload_dir();
     </tr>
     <tr>
         <th>評価</th>
-        <td class="r_score"><?php the_field('resorn_score_field'); ?></td>
+        <td class="r_score">
+            <i class="s-rating s-rating-<?php echo esc_html(change_resorn_score_format($post->resorn_score_field)); ?> s-article">
+                <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
+            </i>
+        </td>
     </tr>
     <tr>
         <th>職種</th>

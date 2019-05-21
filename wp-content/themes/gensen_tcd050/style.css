@@ -1190,9 +1190,6 @@ a.guest-url { text-decoration:underline; }
   border-bottom: 1px solid #ccc;
   color: #666;
 }
-.post_content table.table_under_border td.r_score {
-  color: #F60077;
-}
 .post_content .table_company {
   width: 20%;
   margin: -0.8em 0px;
@@ -2003,4 +2000,100 @@ star-rating
 .s-rating .s-text-int {
     font-style: normal;
     color: #FF0F6F;
+}
+.s-rating.s-article {
+    width: 150px;
+    height: 18px;
+    background-size: 200px;
+    transform: translate(0, 25%);
+}
+.s-rating.s-rating-5.s-article {
+    background-position: -10px -567px;
+}
+.s-rating.s-rating-4-5.s-article {
+    background-position: -10px -545px;
+}
+.s-rating.s-rating-4.s-article {
+    background-position: -10px -523px;
+}
+.s-rating.s-rating-3-5.s-article {
+    background-position: -10px -501px;
+}
+.s-rating.s-rating-3.s-article {
+    background-position: -10px -479px;
+}
+.s-rating.s-rating-2-5.s-article {
+    background-position: -10px -456px;
+}
+.s-rating.s-rating-2.s-article {
+    background-position: -10px -434px;
+}
+.s-rating.s-rating-1-5.s-article {
+    background-position: -10px -412px;
+}
+.s-rating.s-rating-1.s-article {
+    background-position: -10px -390px;
+}
+.s-rating.s-rating-0-5.s-article {
+    background-position: -10px -367px;
+}
+.s-rating.s-rating-0.s-article {
+    background-position: -10px -345px;
+}
+.s-rating.s-article .s-text {
+    top: -2px;
+    left: 110px;
+    font-size: 14px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
+/* 求人一覧のStar Rationg */
+.s-rating.s-offers-sp {
+    width: 150px;
+    height: 18px;
+    background-size: 175px;
+    transform: translate(0, 25%);
+}
+.s-rating.s-rating-5.s-offers-sp {
+    background-position: -7px -204px;
+}
+.s-rating.s-rating-4-5.s-offers-sp {
+    background-position: -7px -184px;
+}
+.s-rating.s-rating-4.s-offers-sp {
+    background-position: -7px -165px;
+}
+.s-rating.s-rating-3-5.s-offers-sp {
+    background-position: -7px -146px;
+}
+.s-rating.s-rating-3.s-offers-sp {
+    background-position: -7px -126px;
+}
+.s-rating.s-rating-2-5.s-offers-sp {
+    background-position: -7px -106px;
+}
+.s-rating.s-rating-2.s-offers-sp {
+    background-position: -7px -87px;
+}
+.s-rating.s-rating-1-5.s-offers-sp {
+    background-position: -7px -67px;
+}
+.s-rating.s-rating-1.s-offers-sp {
+    background-position: -7px -47px;
+}
+.s-rating.s-rating-0-5.s-offers-sp {
+    background-position: -7px -28px;
+}
+.s-rating.s-rating-0.s-offers-sp {
+    background-position: -7px -9px;
+}
+.s-rating.s-offers-sp .s-text {
+    top: 5px;
+    left: 110px;
+    font-size: 1em;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
+.pc-hidden {
+  display: none;
 }

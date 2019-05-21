@@ -944,6 +944,9 @@
     background: -o-linear-gradient(left, rgb(56, 142, 247), #ffb2b2);
     background: linear-gradient(to right, rgb(56, 142, 247), #ffb2b2);
   }
+  .pc-hidden {
+    display: table-row;
+  }
 }
 /* ----------------------------------------------------------------------
 見出し 
