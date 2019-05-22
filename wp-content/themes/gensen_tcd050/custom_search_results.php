@@ -2,6 +2,7 @@
     // カスタム検索用グローバル変数
     global $custom_search_vars;
     $upload_dir = wp_upload_dir();
+    $sort_info = sort_info();
 
     get_header();
     $dp_options = get_desing_plus_option();
@@ -173,33 +174,21 @@
       </dd>
     </dl>
 
-    <form name="sort_form">
-      <select name="sort" onchange="dropsort()">
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'r_score_desc', $sort_base_url)); ?>"
-          <?php if ($sort == 'r_score_desc') {echo 'selected';} ?>>
-          RESORNスコアが高い順</option>
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'r_score_asc', $sort_base_url)); ?>"
-          <?php if ($sort == 'r_score_asc') {echo 'selected';} ?>>
-          RESORNスコアが低い順</option>
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'int_salary_desc', $sort_base_url)); ?>" <?php if ($sort == 'int_salary_desc') {echo 'selected';} ?>>
-          給与が高い順</option>
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'int_salary_asc', $sort_base_url)); ?>" <?php if ($sort == 'int_salary_asc') {echo 'selected';} ?>>
-          給与が低い順</option>
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'date_desc', $sort_base_url)); ?>" <?php if ($sort == 'date_desc') {echo 'selected';} ?>>
-          新しい順</option>
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'date_asc', $sort_base_url)); ?>" <?php if ($sort == 'date_asc') {echo 'selected';} ?>>
-          古い順</option>
-        <option
-          value="<?php echo esc_attr(add_query_arg('sort', 'views', $sort_base_url)); ?>" <?php if ($sort == 'views') {echo 'selected';} ?>>
-          閲覧数順</option>
-      </select>
-    </form>
+    <!-- SP用のソートセレクトボックス -->
+    <div class="select-bx">
+      <p>並び順：</p>
+      <div class="select-name">
+        <form name="sort_form">
+          <select name="sort" onchange="dropsort()">
+            <?php foreach ($sort_info as $sort_query => $sort_name ) : ?>
+              <option value="<?php echo esc_attr(add_query_arg('sort', $sort_query, $sort_base_url)); ?>" <?php if ($sort == $sort_query) {echo 'selected';} ?>><?php echo $sort_name; ?>
+              </option>
+            <?php endforeach; ?>
+          </select>
+        </form>
+        <i class="far fa-caret-square-down"></i>
+      </div>
+    </div>
 
     <script>
       function dropsort() {

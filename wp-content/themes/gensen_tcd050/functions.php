@@ -1442,3 +1442,17 @@ function change_resorn_score_format($resorn_score)
     }
     return $resorn_score;
 }
+
+// セレクトボックス用の情報
+function sort_info() {
+    $array = array(
+        'r_score_desc' => 'RESORNスコアが高い順',
+        'r_score_asc' => 'RESORNスコアが低い順',
+        'int_salary_desc' => '給与が高い順',
+        'int_salary_asc' => '給与が低い順',
+        'date_desc' =>  '新しい順',
+        'date_asc' => '古い順',
+        'views' => '閲覧数順',
+    );
+    return $array;
+}

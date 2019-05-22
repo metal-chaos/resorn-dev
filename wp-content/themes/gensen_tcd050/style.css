@@ -57,6 +57,14 @@ abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
 table { border-collapse:collapse; border-spacing:0; width:100%; }
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 button, input, select, textarea { outline:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; font-size:100%; }
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
 input, textarea { background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); -webkit-appearance:none; border-radius:0; /* Removing the inner shadow, rounded corners on iOS inputs */ }
 input[type="checkbox"]{ -webkit-appearance:checkbox; }
 input[type="radio"]{ -webkit-appearance:radio; }
@@ -2095,5 +2103,8 @@ star-rating
     transform: translate(0);
 }
 .pc-hidden {
+  display: none;
+}
+.select-bx {
   display: none;
 }
