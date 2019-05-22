@@ -172,6 +172,41 @@
       </dd>
     </dl>
 
+    <form name="sort_form">
+      <select name="sort" onchange="dropsort()">
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'r_score_desc', $sort_base_url)); ?>"
+          <?php if ($sort == 'r_score_desc') {echo 'selected';} ?>>
+          RESORNスコアが高い順</option>
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'r_score_asc', $sort_base_url)); ?>"
+          <?php if ($sort == 'r_score_asc') {echo 'selected';} ?>>
+          RESORNスコアが低い順</option>
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'int_salary_desc', $sort_base_url)); ?>" <?php if ($sort == 'int_salary_desc') {echo 'selected';} ?>>
+          給与が高い順</option>
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'int_salary_asc', $sort_base_url)); ?>" <?php if ($sort == 'int_salary_asc') {echo 'selected';} ?>>
+          給与が低い順</option>
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'date_desc', $sort_base_url)); ?>" <?php if ($sort == 'date_desc') {echo 'selected';} ?>>
+          新しい順</option>
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'date_asc', $sort_base_url)); ?>" <?php if ($sort == 'date_asc') {echo 'selected';} ?>>
+          古い順</option>
+        <option
+          value="<?php echo esc_attr(add_query_arg('sort', 'views', $sort_base_url)); ?>" <?php if ($sort == 'views') {echo 'selected';} ?>>
+          閲覧数順</option>
+      </select>
+    </form>
+
+    <script>
+      function dropsort() {
+        var browser = document.sort_form.sort.value;
+        location.href = browser
+      }
+    </script>
+
     <?php get_template_part('navigation2'); ?>
 
     <ol id="post_list2">
@@ -262,78 +297,79 @@
             }
         }
      ?>
-            <!-- <div class="r_score_sp" id=score<?php echo resorn_score(); ?> >
-              <div class="r_score_title_sp">RESORNスコア</div>
-              <div class="r_score_text_sp">
-              </div>
-            </div> -->
-            <table class="recruit_list">
-              <tr>
-                <th>会社</th>
-                <td><img class="recruit_list_company"
-                    src="<?php echo do_shortcode('[company_image]'); ?>">
-                </td>
-              </tr>
-              <tr class="pc-hidden">
-                <th>評価</th>
-                <td><i
-                    class="s-rating s-rating-<?php echo esc_html(change_resorn_score_format($post->resorn_score_field)); ?> s-offers-sp">
-                      <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
-                  </i>
-                </td>
-              </tr>
-              <tr>
-                <th>職種</th>
-                <td><?php echo esc_html($post->occupation_field); ?>
-                </td>
-              </tr>
-              <tr>
-                <th>給与</th>
-                <td><?php echo wp_strip_all_tags(salary_fi()); ?>
-                </td>
-              </tr>
-            </table>
-            <div class="navigation2_icons">
-              <img
-                class="<?php echo esc_html($post->icon_dormitory_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-koshitsuryo-1.png">
-              <img
-                class="<?php echo esc_html($post->icon_highIncome_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-koshunyu-1.png">
-              <img
-                class="<?php echo esc_html($post->icon_campaign_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-campaign-1.png">
-              <img
-                class="<?php echo esc_html($post->icon_meal_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-shokuji-1.png">
-              <img
-                class="<?php echo esc_html($post->icon_transportationFee_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-carloan-1.png">
-              <img
-                class="<?php echo esc_html($post->icon_wifi_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-wifi-1.png">
-              <img
-                class="<?php echo esc_html($post->icon_spa_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-spa-1.png">
+            <!-- <div class="r_score_sp" id=score<?php echo resorn_score(); ?>
+            >
+            <div class="r_score_title_sp">RESORNスコア</div>
+            <div class="r_score_text_sp">
             </div>
-            <div class="recruit_list_btn">詳しい内容を見る</div>
+          </div> -->
+          <table class="recruit_list">
+            <tr>
+              <th>会社</th>
+              <td><img class="recruit_list_company"
+                  src="<?php echo do_shortcode('[company_image]'); ?>">
+              </td>
+            </tr>
+            <tr class="pc-hidden">
+              <th>評価</th>
+              <td><i
+                  class="s-rating s-rating-<?php echo esc_html(change_resorn_score_format($post->resorn_score_field)); ?> s-offers-sp">
+                  <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
+                </i>
+              </td>
+            </tr>
+            <tr>
+              <th>職種</th>
+              <td><?php echo esc_html($post->occupation_field); ?>
+              </td>
+            </tr>
+            <tr>
+              <th>給与</th>
+              <td><?php echo wp_strip_all_tags(salary_fi()); ?>
+              </td>
+            </tr>
+          </table>
+          <div class="navigation2_icons">
+            <img
+              class="<?php echo esc_html($post->icon_dormitory_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-koshitsuryo-1.png">
+            <img
+              class="<?php echo esc_html($post->icon_highIncome_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-koshunyu-1.png">
+            <img
+              class="<?php echo esc_html($post->icon_campaign_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-campaign-1.png">
+            <img
+              class="<?php echo esc_html($post->icon_meal_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-shokuji-1.png">
+            <img
+              class="<?php echo esc_html($post->icon_transportationFee_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-carloan-1.png">
+            <img
+              class="<?php echo esc_html($post->icon_wifi_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-wifi-1.png">
+            <img
+              class="<?php echo esc_html($post->icon_spa_field); ?>"
+              src="https://resorn.net/wp-content/uploads/2018/02/new-spa-1.png">
           </div>
-        </a>
-      </li>
-      <?php   endwhile; ?>
+          <div class="recruit_list_btn">詳しい内容を見る</div>
+  </div>
+  </a>
+  </li>
+  <?php   endwhile; ?>
 
-    </ol><!-- END #post_list2 -->
+  </ol><!-- END #post_list2 -->
 
-    <?php get_template_part('navigation2'); ?>
+  <?php get_template_part('navigation2'); ?>
 
-    <?php else: ?>
-    <p class="no_post"><?php _e('There is no registered post.', 'tcd-w'); ?>
-    </p>
-    <?php endif; ?>
+  <?php else: ?>
+  <p class="no_post"><?php _e('There is no registered post.', 'tcd-w'); ?>
+  </p>
+  <?php endif; ?>
 
-  </div><!-- END #left_col -->
+</div><!-- END #left_col -->
 
-  <?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 
 </div><!-- END #main_col -->
 
