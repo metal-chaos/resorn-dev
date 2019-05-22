@@ -1,6 +1,7 @@
 <?php
     // カスタム検索用グローバル変数
     global $custom_search_vars;
+    $upload_dir = wp_upload_dir();
 
     get_header();
     $dp_options = get_desing_plus_option();
@@ -332,25 +333,25 @@
           <div class="navigation2_icons">
             <img
               class="<?php echo esc_html($post->icon_dormitory_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-koshitsuryo-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-koshitsuryo-1.png">
             <img
               class="<?php echo esc_html($post->icon_highIncome_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-koshunyu-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-koshunyu-1.png">
             <img
               class="<?php echo esc_html($post->icon_campaign_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-campaign-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-campaign-1.png">
             <img
               class="<?php echo esc_html($post->icon_meal_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-shokuji-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-shokuji-1.png">
             <img
               class="<?php echo esc_html($post->icon_transportationFee_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-carloan-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-carloan-1.png">
             <img
               class="<?php echo esc_html($post->icon_wifi_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-wifi-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-wifi-1.png">
             <img
               class="<?php echo esc_html($post->icon_spa_field); ?>"
-              src="https://resorn.net/wp-content/uploads/2018/02/new-spa-1.png">
+              src="<?php echo $upload_dir['baseurl']; ?>/2018/02/new-spa-1.png">
           </div>
           <div class="recruit_list_btn">詳しい内容を見る</div>
   </div>
