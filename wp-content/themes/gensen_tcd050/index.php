@@ -1,6 +1,7 @@
 <?php
     get_header();
     $dp_options = get_desing_plus_option();
+    $sort_info = sort_info();
 
     // タグフィルター用ターム配列
   $tags = false;
@@ -144,6 +145,22 @@
     } ?>><?php _e('Large number of views', 'tcd-w'); ?></a>
       </dd>
     </dl>
+
+    <!-- SP用のソートセレクトボックス -->
+    <div class="select-bx">
+      <p>並び順：</p>
+      <div class="select-name">
+        <form name="sort_form">
+          <select name="sort" onchange="dropsort()">
+            <?php foreach ($sort_info as $sort_query => $sort_name ) : ?>
+              <option value="<?php echo esc_attr(add_query_arg('sort', $sort_query, $sort_base_url)); ?>" <?php if ($sort == $sort_query) {echo 'selected';} ?>><?php echo $sort_name; ?>
+              </option>
+            <?php endforeach; ?>
+          </select>
+        </form>
+        <i class="far fa-caret-square-down"></i>
+      </div>
+    </div>
 
     <?php get_template_part('navigation2'); ?>
 

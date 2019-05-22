@@ -16,6 +16,7 @@ function tcd_head() {
 <script src="<?php echo get_template_directory_uri(); ?>/js/jscript.js?ver=<?php echo version_num(); ?>"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/comment.js?ver=<?php echo version_num(); ?>"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/recruit_lists.js?ver=<?php echo version_num(); ?>"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/sort.js?ver=<?php echo version_num(); ?>"></script>
 <?php if($dp_options['header_fix'] == 'type2' || $dp_options['mobile_header_fix'] == 'type2') { ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/header_fix.js?ver=<?php echo version_num(); ?>"></script>
 <?php } ?>

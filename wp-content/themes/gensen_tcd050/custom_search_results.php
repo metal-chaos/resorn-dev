@@ -190,13 +190,6 @@
       </div>
     </div>
 
-    <script>
-      function dropsort() {
-        var browser = document.sort_form.sort.value;
-        location.href = browser
-      }
-    </script>
-
     <?php get_template_part('navigation2'); ?>
 
     <ol id="post_list2">
