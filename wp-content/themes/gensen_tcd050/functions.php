@@ -1075,7 +1075,7 @@ function sort_pre_get_posts($wp_query)
     }
 
     // デフォルトのソート
-    if (!isset($_REQUEST['sort']) && $wp_query->is_archive() || (is_search() || !empty($custom_search_vars))) {
+    if (!isset($_REQUEST['sort']) && $wp_query->is_archive() || (is_search() || !empty($custom_search_vars) || is_home())) {
         $wp_query->set('meta_key', 'resorn_score_field');
         $wp_query->set('orderby', 'meta_value_num');
         $wp_query->set('order', 'DESC');

@@ -153,8 +153,10 @@
         <form name="sort_form">
           <select name="sort" onchange="dropsort()">
             <?php foreach ($sort_info as $sort_query => $sort_name ) : ?>
-              <option value="<?php echo esc_attr(add_query_arg('sort', $sort_query, $sort_base_url)); ?>" <?php if ($sort == $sort_query) {echo 'selected';} ?>><?php echo $sort_name; ?>
-              </option>
+            <option
+              value="<?php echo esc_attr(add_query_arg('sort', $sort_query, $sort_base_url)); ?>"
+              <?php if ($sort == $sort_query) {echo 'selected';} ?>><?php echo $sort_name; ?>
+            </option>
             <?php endforeach; ?>
           </select>
         </form>
@@ -258,7 +260,7 @@
                 <th>評価</th>
                 <td><i
                     class="s-rating s-rating-<?php echo esc_html(change_resorn_score_format($post->resorn_score_field)); ?> s-offers-sp">
-                      <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
+                    <span class="s-text">（星5のうち星<span class="s-text-int"><?php echo esc_html($post->resorn_score_field); ?></span>）</span>
                   </i>
                 </td>
               </tr>
