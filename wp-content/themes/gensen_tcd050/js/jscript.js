@@ -5,12 +5,12 @@ jQuery(document).ready(function($){
   // header search select
   $('.header_search_inputs select').chosen({width:'100%', disable_search:true});
   $('.header_search_inputs select').on('chosen:showing_dropdown', function(event, obj){
-    obj.chosen.dropdown.stop().css({opacity:0, height:'auto', clip:'auto'});
+    obj.chosen.dropdown.stop().css({opacity:0, height:'auto', clip:'auto'})
     var h = obj.chosen.dropdown.outerHeight();
     obj.chosen.dropdown.css({height:0}).animate({opacity:1, height:h}, 300);
   });
   $('.header_search_inputs select').on('chosen:hiding_dropdown', function(event, obj){
-    obj.chosen.dropdown.stop().animate({opacity:0, height:0}, 300);
+    obj.chosen.dropdown.stop().animate({opacity:0, height:0}, 300, function(){ obj.chosen.dropdown.find('.chosen-results').html(''); });
   });
 
   // header search and/or
