@@ -244,6 +244,12 @@ a.menu_button { display:none; }
   text-align: center;
   padding-top: 10px;
 }
+#header_search .header_search_button {
+  padding-top: 0;
+}
+#header_search #header_search_submit {
+  width: 90%;
+}
 form.columns-5 .header_search_inputs { width:20%; }
 form.columns-5 .header_search_button { width:14.36%; }
 .header_search_inputs input, .header_search_inputs select {
