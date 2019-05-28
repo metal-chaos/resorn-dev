@@ -447,7 +447,20 @@ ul.page-numbers li.disable { display:none; }
 .archive_sort { margin:0 0 50px 0; }
 .archive_sort dt, .archive_sort dd { float:left; width:25%; text-align:center; }
 .archive_sort dt { color:#fff; background:#b69e84; line-height:52px; }
-.archive_sort dd a { display:block; line-height:50px; color:#000; text-decoration:none; border:1px solid #ddd; border-left:none; }
+.archive_sort dd a {
+  display:block;
+  line-height:50px;
+  color:#000;
+  text-decoration:none;
+  border:1px solid #ddd;
+  border-left:none;
+}
+.archive_sort dd:nth-child(5) a {
+  border-left:1px solid #ddd;
+}
+.archive_sort dd:nth-child(n + 5) a {
+  border-top: none;
+}
 .archive_sort dd a.active, .archive_sort dd a:hover { background:#f7f7f7; }
 
 .custom_search_results .page_navi2 { display:block; margin:25px 0 20px 0; }
