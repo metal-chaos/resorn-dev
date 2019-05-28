@@ -123,7 +123,7 @@
   }
   #header_top a.search_button span { text-indent:100%; white-space:nowrap; overflow:hidden; display:block; }
   #header_top a.search_button:before {
-    content:'\e915'; font-family:'design_plus'; color:#fff; display:block; position:absolute; top:10px; left:19px;
+    content:'\e915'; font-family:'design_plus'; color:#707070 !important; display:block; position:absolute; top:10px; left:19px;
     font-size:18px; width:24px; height:24px; line-height:24px;
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
   }
