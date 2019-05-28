@@ -127,8 +127,7 @@
     font-size:18px; width:24px; height:24px; line-height:24px;
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
   }
-
-  #header_search, #index_header_search {
+  #index_header_search {
     width:100%;
     padding:25px 0;
     z-index: 4;
@@ -146,10 +145,17 @@
   #header_slider.slider_video_mobile .caption > :nth-child(2) {
   -webkit-animation:sliderCaptionAnimation 1s ease forwards 1s; animation:sliderCaptionAnimation 1s ease forwards 1s;
   }
-  #header_search { display:none; position:absolute; top:60px; left:0; z-index:9; }
+  #header_search {
+    display:none;
+    z-index:9;
+    width:100%;
+    padding:25px 0;
+    z-index: 4;
+  }
   #header_search form, #index_header_search form {
     display:block;
     width:90%;
+    margin: auto;
   }
   .header_search_inputs, form.columns-5 .header_search_inputs { width:100%; margin:0 0 12px 0; }
   .header_search_button, form.columns-5 .header_search_button { width:100%; margin:25px 0 0 0; text-align:center; }
