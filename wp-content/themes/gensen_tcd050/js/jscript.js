@@ -81,10 +81,11 @@ jQuery(document).ready(function($){
     }
     if($('#header_search').is(':visible')) {
       $('#header').removeClass('active');
-      $('#header_search').hide();
+      $('#header_search').animate( { height: 'toggle', opacity: 'toggle' }, 'slow' );
+;
     } else {
       $('#header').addClass('active');
-      $('#header_search').show();
+      $('#header_search').animate( { height: 'toggle', opacity: 'toggle' }, 'slow' );
     }
     return false;
   });
