@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
   $('a').bind('focus',function(){if(this.blur)this.blur();});
 
   // header search select
-  $('.header_search_inputs select').chosen({width:'100%', disable_search:true});
+  $('.header_search_inputs select').chosen({width:'100%', disable_search:false, search_contains:true});
   $('.header_search_inputs select').on('chosen:showing_dropdown', function(event, obj){
     obj.chosen.dropdown.stop().css({opacity:0, height:'auto', clip:'auto'})
     var h = obj.chosen.dropdown.outerHeight();
