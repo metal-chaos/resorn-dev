@@ -1063,14 +1063,9 @@ function sort_pre_get_posts($wp_query)
 
         // 給与降順
         } elseif ($_REQUEST['sort'] === 'int_salary_desc') {
-            $wp_query->set('meta_key', 'resorn_score_field');
+            $wp_query->set('meta_key', 'int_salary_field');
             $wp_query->set('orderby', 'meta_value_num');
             $wp_query->set('order', 'DESC');
-        // RESORNスコア昇順
-        } elseif ($_REQUEST['sort'] === 'r_score_asc') {
-            $wp_query->set('meta_key', 'resorn_score_field');
-            $wp_query->set('orderby', 'meta_value_num');
-            $wp_query->set('order', 'ASC');
         }
     }
 
