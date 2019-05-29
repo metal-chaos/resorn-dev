@@ -1327,16 +1327,9 @@ function average_salary($term_id)
 // 全ての掲載件数を取得する
 function number_of_all_job_offers()
 {
-    $args = array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'posts_per_page' => -1,
-    );
-
-    $the_query = new WP_Query($args);
-    wp_reset_postdata();
-    $post_count  = $the_query->post_count;
-    return number_format($post_count);
+    $count_posts  = wp_count_posts();
+	$published_posts = $count_posts->publish;
+    return number_format($published_posts);
 }
 
 // 全ての時給の平均を取得する
