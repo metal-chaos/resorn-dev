@@ -1075,10 +1075,12 @@ function sort_pre_get_posts($wp_query)
     }
 
     // デフォルトのソート
-    if (!isset($_REQUEST['sort']) && $wp_query->is_archive() || (is_search() || !empty($custom_search_vars) || is_home())) {
-        $wp_query->set('meta_key', 'resorn_score_field');
-        $wp_query->set('orderby', 'meta_value_num');
-        $wp_query->set('order', 'DESC');
+    if (!isset($_REQUEST['sort'])) {
+        if ($wp_query->is_archive() || (is_search() || !empty($custom_search_vars) || is_home())) {
+            $wp_query->set('meta_key', 'resorn_score_field');
+            $wp_query->set('orderby', 'meta_value_num');
+            $wp_query->set('order', 'DESC');
+        }
     }
 }
 add_action('pre_get_posts', 'sort_pre_get_posts');
@@ -1260,6 +1262,7 @@ function number_of_job_offers($term_id)
         'post_status' => 'publish',
         'cat' => $term_id,
         'posts_per_page' => -1,
+        'no_found_rows' => true,
     );
 
     $the_query = new WP_Query($args);
@@ -1276,6 +1279,7 @@ function average_resorn_score($term_id)
         'post_status' => 'publish',
         'cat' => $term_id,
         'posts_per_page' => -1,
+        'no_found_rows' => true,
     );
 
     $the_query = new WP_Query($args);
@@ -1304,6 +1308,7 @@ function average_salary($term_id)
         'post_status' => 'publish',
         'cat' => $term_id,
         'posts_per_page' => -1,
+        'no_found_rows' => true,
     );
 
     $the_query = new WP_Query($args);
@@ -1339,6 +1344,7 @@ function average_salary_all_job_offers()
         'post_type' => 'post',
         'post_status' => 'publish',
         'posts_per_page' => -1,
+        'no_found_rows' => true,
     );
 
     $the_query = new WP_Query($args);
@@ -1366,6 +1372,7 @@ function top_of_salary()
         'post_type' => 'post',
         'post_status' => 'publish',
         'posts_per_page' => 1,
+        'no_found_rows' => true,
         'meta_key' => 'int_salary_field',
         'orderby' => 'meta_value_num',
         'order' => 'DESC',
