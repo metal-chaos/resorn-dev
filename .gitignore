@@ -27,3 +27,4 @@ wp-content/ai1wm-backups/
 /sitemap.xml.gz
 
 .vscode
+.user.ini
