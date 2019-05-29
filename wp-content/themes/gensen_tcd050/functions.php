@@ -1285,12 +1285,15 @@ function average_resorn_score($term_id)
         $value = get_field('resorn_score_field');
         if ($value) {
             $sum_resorn_score += $value;
+        /* 空の場合は全体から引く */
+        } else {
+            $no_count += 1;
         }
 
         endwhile;
     }
     wp_reset_postdata();
-    $post_count  = $the_query->post_count;
+    $post_count  = $the_query->post_count - $no_count;
     $average_resorn_score = $sum_resorn_score / $post_count;
     return round($average_resorn_score, 1);
 }
@@ -1314,12 +1317,15 @@ function average_salary($term_id)
         $value = get_field('int_salary_field');
         if ($value) {
             $sum_salary += $value;
+        /* 空の場合は全体から引く */
+        } else {
+            $no_count += 1;
         }
 
         endwhile;
     }
     wp_reset_postdata();
-    $post_count  = $the_query->post_count;
+    $post_count  = $the_query->post_count - $no_count;
     $average_salary = $sum_salary / $post_count;
     return number_format(round($average_salary, 0));
 }
@@ -1350,12 +1356,15 @@ function average_salary_all_job_offers()
         $value = get_field('int_salary_field');
         if ($value) {
             $sum_salary += $value;
+        /* 空の場合は全体から引く */
+        } else {
+            $no_count += 1;
         }
 
         endwhile;
     }
     wp_reset_postdata();
-    $post_count  = $the_query->post_count;
+    $post_count  = $the_query->post_count - $no_count;
     $average_salary = $sum_salary / $post_count;
     return number_format(round($average_salary, 0));
 }
