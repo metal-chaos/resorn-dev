@@ -566,7 +566,7 @@ ul.page-numbers li.disable { display:none; }
 #post_meta_top { margin:0 0 10px 0; padding:0; width:100%; }
 
 /* 記事タイトル */
-#post_title { margin:0 0 28px; padding:0; font-size:30px; line-height:1.2; }
+#post_title { margin:0 0 28px; padding:0; font-size:20px; line-height:1.2; }
 #article_header #post_title { margin:0; font-weight: 300;}
 
 /* 日付 */
