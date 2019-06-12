@@ -343,7 +343,7 @@ form.columns-5 .header_search_button { width:14.36%; }
 /* 共通カテゴリー・日付 */
 ul.meta { margin:0 6px 4px 0; padding:0; }
 ul.meta li { display:inline-block; margin:0 6px 0 0; padding:0; font-size:12px; }
-ul.meta li.cat a, ul.meta li.cat span { display:inline-block; margin:0 6px 4px 0; padding:0 13px; min-width:50px; line-height:26px; text-align:center; text-decoration:none; border-radius:13px; color:#fff; background:#000; }
+ul.meta li.cat a, ul.meta li.cat span { display:inline-block; margin:0 6px 4px 0; padding:0 13px; min-width:50px; line-height:26px; text-align:center; text-decoration:none; border-radius:13px; color:#fff; background:#999; }
 ul.meta li.cat > :last-child { margin-right:0; }
 ul.meta li.date { display:block; margin:10px 0 0 0; color:#999; line-height:1; }
 
