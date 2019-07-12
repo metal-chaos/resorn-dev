@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/saga/ureshino-onsen.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
