@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>鯉のぼり祭り</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen-koinoborimatsuri.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen-koinoborimatsuri.jpg"
                 alt="杖立温泉鯉のぼり祭り">
             <p>4月の始めから5月のGWまで行われる「杖立温泉鯉のぼり祭り」は、温泉街沿いの杖立川上空を約3,500匹の鯉のぼりが泳ぐお祭りです。2019年は4月1日（月）〜5月6日（月・祝）に開催され、平成と令和を繋ぐイベントとなりました。河川をまたぐ鯉のぼりの発祥は、杖立温泉といわれています。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>松原ダム</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen-matsubaradam.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen-matsubaradam.jpg"
                 alt="松原ダム">
             <p>大分県日田市、一級河川・筑後川の上流部に建設された「松原ダム」は、杖立温泉から約7kmに位置しています。松原ダム遊覧船に乗船すれば、杖立トンネル付近の桟橋から下筌ダムまでの7.5kmのコースを折り返しで楽しむことができます。湖上から雄大な自然を観覧することが可能です。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>日田川開き観光祭</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen-hitakawabiraki.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/tsuetate-onsen/tsuetate-onsen-hitakawabiraki.jpg"
                 alt="日田川開き観光祭">
             <p>2019年5月25（土）、5月26日（日）の2日間で行われた「日田川開き観光祭（ひたかわびらきかんこうさい）」は、盛大な花火大会です。約1万発の花火が上空を彩ります。すでに72回の開催を数え、例年20万人を超える観光客で賑わいます。
             </p>

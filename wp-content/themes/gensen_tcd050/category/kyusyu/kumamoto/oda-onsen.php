@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/oda-onsen/oda-onsen.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/oda-onsen/oda-onsen.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>黒川温泉</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/oda-onsen/oda-onsen-kurokawa-onsen.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/oda-onsen/oda-onsen-kurokawa-onsen.jpg"
                 alt="黒川温泉">
             <p>黒川温泉は自然豊かな景色に囲まれているので、心地よく入浴することができます。また、切り傷などに効くと言われている硫黄温泉や、アトピーなどの皮膚炎にも良いと言われている薬師湯に入ることができます。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>夫婦滝</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/oda-onsen/oda-onsen-fufutaki.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/oda-onsen/oda-onsen-fufutaki.jpg"
                 alt="夫婦滝">
             <p>夫婦滝は縁結びに良いと言われており、結婚に踏み出せないカップルなどには人気の場所です。また緑豊かな森林が周りにあるので、心を浄化してくれると若い男女からは絶賛の場所です。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>山あいの宿　山みず木</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/oda-onsen/oda-onsen-yamamizuki.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/oda-onsen/oda-onsen-yamamizuki.jpg"
                 alt="山あいの宿　山みず木">
             <p>温泉街から少し距離がありますが、山あいに位置しているので周りの音を気にせずに入浴できます。露天風呂の近くには川が流れており、川のせせらぎを聴きながら入浴できます。また、大自然の中で温泉に入っている気分になるので、ストレスが溜まっている方におすすめです。
             </p>

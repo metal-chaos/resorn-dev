@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/unzen/unzen.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/unzen/unzen.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>仁田峠ロープウェイ</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/unzen/nagasaki-nitamisaki-ropeway.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/unzen/nagasaki-nitamisaki-ropeway.jpg"
                 alt="仁田峠ロープウェイ">
             <p>標高差約174m、距離にして約500mを結ぶロープウェイです。海抜1300m上空を空中散歩しながら眺める景色は抜群で、春はツツジ、夏はヤマボウシ、秋は紅葉、冬は花ぼうろと四季折々でまったく異なる表情を見せる大自然を満喫できます。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>温泉神社</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/unzen/unzen-unzen-jinja.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/unzen/unzen-unzen-jinja.jpg"
                 alt="温泉神社">
             <p>古くからこの地域の祈願所として有名であった温泉神社（うんぜんじんじゃ）の総本山です。この神社は雲仙地獄のすぐ近くにあり、無料で参拝できるため、周辺を散策している途中に立ち寄りやすい観光スポットです。また、恋愛成就のパワースポットとしても有名です。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>白雲の池</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/unzen/unzen-shirokumonoike.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/unzen/unzen-shirokumonoike.jpg"
                 alt="白雲の池">
             <p>温泉街から徒歩でおよそ20分のところにあり、レンタルボートやキャンプを楽しむこともできます。近くある絹笠山では野鳥のさえずりや心地よい風を感じながらの散策も可能で、山頂からは雲仙の温泉街や山々を一望できます。
             </p>

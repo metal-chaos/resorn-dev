@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/sasebo/sasebo.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/sasebo/sasebo.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>九十九島</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/sasebo/sasebo-tsukumoto.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/sasebo/sasebo-tsukumoto.jpg"
                 alt="九十九島">
             <p>九十九島とは、佐世保港から北へ約25キロメートルに渡って点在する島々のことであり、島の密度は日本一です。「九十九」とはなっていますが、実際の数は208あります。ハリウッド映画「ラストサムライ」のロケ地にもなった石岳展望台や、菜の花やコスモスなどの季節折々の花を楽しめる展海峰など、8つの展望所があります。各展望所から見るリアス式海岸の景観は圧巻です。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>西海橋公園</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/sasebo/sasebo-saikaibashipark.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/sasebo/sasebo-saikaibashipark.jpg"
                 alt="西海橋公園">
             <p>佐世保市と西海市に挟まれた針尾瀬戸には「西海橋」と「新西海橋（第二西海橋）」が架かっており、その絶景を望める公園が「西海橋公園」です。西海橋から新西海橋（歩道橋）、ウォークデッキなどを散策する「回遊コース」では、間近に大自然の海を見ることができ、その迫力を堪能できます。また、公園ではアスレチックを楽しんだり、桜やツツジの花を鑑賞できたりします。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>ハウステンボス</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/sasebo/sasebo-huis-ten-bosch.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/sasebo/sasebo-huis-ten-bosch.jpg"
                 alt="ハウステンボス">
             <p>ヨーロッパをテーマにしたテーマパークです。園内にはヨーロッパ風の洒落たホテルや、世界初のロボットホテル「変なホテル」があり、心が刺激されます。また、船が行き交う運河やアミューズメントコーナー、最新のテクノロジーを駆使した「エコシティー」などの施設が充実しており、1日居ても飽きないほど楽しめます。
             </p>

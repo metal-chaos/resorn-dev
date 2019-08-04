@@ -3,8 +3,10 @@
     $upload_dir = wp_upload_dir();
 ?>
 </div>
-<img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/iriomote-island/iriomote-island.jpg"
+<img class="archive_heading_banner" src="<?php
+        echo $upload_dir['baseurl'];
+        echo read_category_template();
+    ?>/main.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,22 +55,28 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>ジャングルトレッキング</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/iriomote-island/jungle-trekking.jpg"
-                alt="ジャングルトレッキング">
+            <img src="<?php
+            echo $upload_dir['baseurl'];
+            echo read_category_template();
+            ?>/sub_1.jpg" alt="ジャングルトレッキング">
             <p>文字通りジャングルのような森であり、この場所を探索するツアーに参加した場合にはトレッキングやカヤックを体験することができます。また地元でとれた食材を使用した美味な食事をとることもできるのでとても魅力的です。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>星砂の浜</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/iriomote-island/hosizunanohama.jpg"
-                alt="星砂の浜">
+            <img src="<?php
+            echo $upload_dir['baseurl'];
+            echo read_category_template();
+            ?>/sub_2.jpg" alt="星砂の浜">
             <p>ここに存在する白浜の砂は星形をしています。これらは珊瑚や特殊な虫の死骸が砕けてこのような形になっていると言われており、顕微鏡で見ると星の形をしているのです。持ち帰ることはNGですが、少しだけ特殊な体験をしたいときにおすすめです。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>バラス島</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/iriomote-island/barasu-island.jpg"
-                alt="バラス島">
+            <img src="<?php
+            echo $upload_dir['baseurl'];
+            echo read_category_template();
+            ?>/sub_3.jpg" alt="バラス島">
             <p>この海の特徴は何と言ってもコバルトブルーの海模様!非常に透明度のたかい海となっているので神秘的な光景を楽しむことができますし、この海で泳いで遊ぶこともできます。
             </p>
         </div>

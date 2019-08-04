@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>阿弥陀杉</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen-amidasugi.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen-amidasugi.jpg"
                 alt="阿弥陀杉">
             <p>阿弥陀杉は樹高38メートル、樹齢1300年を超える大きな杉の木です。大きな幹の途中から無数の幹が枝分かれしていてその姿が阿弥陀仏に似ていることからその名前を名付けられました。過去に起こった台風により大半が無くなりましたがそれでも驚くほど大きな木です。無くなった大半の部分は町の図書館に飾られています。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>下城滝</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen-shimonjonotaki.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen-shimonjonotaki.jpg"
                 alt="下城滝">
             <p>下城滝は下城大イチョウから見ることが出来る落差49メートルの大きな滝です。阿蘇のカルデラ噴火によって出来た火砕流が降り積もって出来たと言われています。滝の裏側には空洞みたいなものがあります。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>鍋ケ滝</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen-nabegataki.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/kurokawa-onsen/kurokawa-onsen-nabegataki.jpg"
                 alt="鍋ケ滝">
             <p>鍋ケ滝も同じく阿蘇のカルデラ噴火によって出来た滝です。滝は裏側が透けて見えるほどの少ない水量で流れています。そしてこの滝は裏側にも行く事ができ、裏側からも滝の流れる姿を見ることが出来ます。春になると夜間のライトアップも施されます。
             </p>

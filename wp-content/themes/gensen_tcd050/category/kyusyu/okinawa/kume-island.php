@@ -4,7 +4,10 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/kume-island/kume-island.jpg"
+    src="<?php
+        echo $upload_dir['baseurl'];
+        echo read_category_template();
+    ?>/main.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +56,30 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>イーフビーチ</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/kume-island/eaf-beach.jpg"
+            <img src="<?php
+            echo $upload_dir['baseurl'];
+            echo read_category_template();
+            ?>/sub_1.jpg"
                 alt="イーフビーチ">
             <p>日本の渚100選にも選ばれた久米島を代表する美しいビーチです。はるか2km先まできめ細かい真っ白な砂で覆われた浜が広がり、海を見ているだけで時間の経つのを忘れます。波打ち際で小さな魚の泳いでいる姿を見ることができます。なお、砂浜が沖合いまで続く遠浅になっているため、干潮になると沖まで歩いて行けます。波は常に穏やかで、側には簡易シャワーやトイレが備わっており、海水浴には最適な環境になっています。朝陽を浴びて白く輝く砂浜を散歩したり、波の音を聴きながら夜空に煌めく星を眺めたり、若いカップルには絶景のデートスポットでもあります。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>宇江城（うえぐすく）城跡</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/kume-island/uegusuku-castle.jpg"
+            <img src="<?php
+            echo $upload_dir['baseurl'];
+            echo read_category_template();
+            ?>/sub_2.jpg"
                 alt="宇江城（うえぐすく）城跡">
             <p>久米島の北部にある標高310mの宇江城岳山頂に城跡が残っています。沖縄県内で一番標高の高い位置にあるため、久米島全景のパノラマを一望できる沖縄県内でも屈指の絶景スポットです。城跡からは青磁などの中国製陶磁器が数多く出土しており、久米島が中国貿易の中継地として繁栄していたことを物語っています。沖縄におけるグスク時代の政治・文化の様相を知る上で貴重な史跡であり、2009年（平成21年）に国の史跡に指定されました。記録がないため、築城の年代は不明ですが、久米中城（くめなかぐす）按司が築いたとされ、1510年に琉球統一の過程で滅ぼされました。城壁の石積みには珊瑚石灰岩が見られる他、周辺で採れる輝石安山岩が使用されています。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>比屋定（ひやじょう）バンタ</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/okinawa/kume-island/hiyajo-banta.jpg"
+            <img src="<?php
+            echo $upload_dir['baseurl'];
+            echo read_category_template();
+            ?>/sub_3.jpg"
                 alt="比屋定（ひやじょう）バンタ">
             <p>島の東北部に位置する海抜200ｍの断崖絶壁にある人気の展望台です。「バンタ」という言葉は断崖絶壁を表しています。展望台に着くと、大きなシーサーが出迎えてくれます。展望台の２階に上がると、サンゴ礁の海岸線を始め、蒼色に染められた大海原を一望することができます。遠くを見ると、ハテの浜から渡名喜島、さらには慶良間諸島まで見渡せます。展望台の床には眺望説明図が描かれておりおり、方向を見定めながら目標となる景色を確認できます。また、絶壁の真下にある海岸には車海老の養殖場や「熱帯魚の家」と呼ばれる観光スポットもあります。きれいな景色を見ながら、展望台でのランチも乙なものです。
             </p>

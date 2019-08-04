@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>島原城</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen-shimabara-castle.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen-shimabara-castle.jpg"
                 alt="島原城">
             <p>江戸初期に松倉重政が安土桃山様式の築城技術の粋を集め、7年の歳月を費やして築いた名城です。館内はキリシタン関連の資料を集めた資料館になっており、彫刻家北村西望の作品を展示している西望記念館や雲仙普賢岳噴火災害を映像と各種資料で紹介している観光復興記念館があります。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>武家屋敷</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen-bukeyashiki.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen-bukeyashiki.jpg"
                 alt="武家屋敷">
             <p>山本邸、篠塚邸、鳥田邸などの一般公開せれている武家屋敷があり見学することが出来ます。城下町の面影が色濃く残る街並みと水の都と呼ばれるほどの美しい川のせせらぎを聞きながら町を散策することが出来ます。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>島原温泉</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen-kemuri.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/nagasaki/shimabara-onsen/shimabara-onsen-kemuri.jpg"
                 alt="島原温泉">
             <p>島原半島海岸沿いに湧出する温泉は、泉質が炭酸水素塩泉でさらりとした感触の湯で、肌にやさしく冷え性にも効く効能があります。趣のある露天風呂が楽しめる宿が立ち並び、公共の浴場、島原温泉 ゆとろぎの湯や24時間入れる足湯もあります。
             </p>

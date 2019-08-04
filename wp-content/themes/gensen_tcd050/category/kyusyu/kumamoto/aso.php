@@ -4,7 +4,7 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/aso/aso.jpg"
+    src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/aso/aso.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,21 +53,21 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>かぶと岩展望所</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/aso/aso-kabutoiwa.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/aso/aso-kabutoiwa.jpg"
                 alt="かぶと岩展望所">
             <p>小高い丘にある展望所から阿蘇の外輪山を背景にした町並みを望むことができる絶好のスポットです。駐車場が４０台分ありますので、レンタカーで立ち寄るのがおすすめ。夜には幻想的な夜景を楽しむこともできます。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>阿蘇神社</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/aso/aso-aso-shrine.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/aso/aso-aso-shrine.jpg"
                 alt="阿蘇神社">
             <p>日本最古の歴史をもつ由緒ある神社です。境内には、３回なでて願い事を唱えるとその願い事がかなうという『願掛け石』や、恋人が欲しい人がその周りを２回まわると良縁にめぐまれるという『高砂の松』といったパワースポットがあります。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>阿蘇ネイチャーランド</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/kumamoto/aso/aso-nature-land.jpg"
+            <img src="<?php  echo $upload_dir['baseurl']; ?>/category/kyusyu/kumamoto/aso/aso-nature-land.jpg"
                 alt="阿蘇ネイチャーランド">
             <p>パラグライダーや熱気球、トレッキングなど、阿蘇の雄大な自然を全身で感じながら様々なアクティビティを体験できる観光スポットです。すべてのアクティビティが予約制なので計画的に観光できるのも魅力です。
             </p>

@@ -4,7 +4,10 @@
 ?>
 </div>
 <img class="archive_heading_banner"
-    src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/saga/ureshino-onsen.jpg"
+    src="<?php
+        echo $upload_dir['baseurl'];
+        echo read_category_template();
+    ?>/main.jpg"
     alt="<?php  echo $queried_object -> name; ?>の風景">
 <div class="inner">
     <div class="archive_heading_wrap">
@@ -53,19 +56,28 @@
     <div class="archive_row">
         <div class="archive_col archive_col-3">
             <h4>シーボルトの湯</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/saga/ureshino-onsen-siebold.jpg" alt="シーボルトの湯">
+            <img src="<?php
+                echo $upload_dir['baseurl'];
+                echo read_category_template();
+            ?>/sub_1.jpg" alt="シーボルトの湯">
             <p>ゴシック風木造2階建ての日帰り温泉「嬉野温泉公衆浴場シーボルトの湯」は、平成22年にオープンし、平成25年3月に入場者数25万人を達成した人気の宿です。1996年に歴史を閉じた公衆浴場「古湯」がリニューアルオープンしたものです。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>轟の滝</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/saga/ureshino-onsen-todorokinotaki.jpg" alt="轟の滝">
+            <img src="<?php
+                echo $upload_dir['baseurl'];
+                echo read_category_template();
+            ?>/sub_2.jpg" alt="轟の滝">
             <p>嬉野の温泉街から長崎方面に1kmほど行くと見える「轟の滝」は、岩屋川内山系と不動山山系の連峰の清水が塩田川に合流した滝です。3段の滝で、落差は11mを誇ります。武雄温泉駅からバスで20分、JR嬉野温泉駅から徒歩10分で向かうことができます。
             </p>
         </div>
         <div class="archive_col archive_col-3">
             <h4>豊玉姫神社</h4>
-            <img src="<?php  echo $upload_dir['baseurl']; ?>/categories/kyusyu/saga/ureshino-onsen-toyotamahime.jpg" alt="豊玉姫神社">
+            <img src="<?php
+                echo $upload_dir['baseurl'];
+                echo read_category_template();
+            ?>/sub_3.jpg" alt="豊玉姫神社">
             <p>嬉野温泉商店街沿い、旅館大正屋の前に参道がある「豊玉姫神社」は、安産の神として鎮座する「トヨタマヒメ」の名を冠した神社です。境内には、豊玉姫の使いとされる「なまず様」が祀られており、美肌効果を感じることができます。
             </p>
         </div>
