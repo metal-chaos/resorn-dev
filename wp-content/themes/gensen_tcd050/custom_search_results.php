@@ -41,9 +41,12 @@
     if (is_category() || is_tax()) {
         $queried_object = get_queried_object(); ?>
     <h2 class="headline rich_font"><?php echo esc_html($queried_object->name); ?>のリゾートバイト求人</h2>
-    <?php if (get_template_part('categories/area', $queried_object->slug) ==true) {
-            get_template_part('categories/area', $queried_object->slug);
-        } ?>
+    <?php
+
+        if (get_template_part(read_category_template()) == true) {
+          get_template_part(read_category_template());
+        }
+    ?>
     <?php
         if ($queried_object->description) {
             ?>
@@ -181,8 +184,10 @@
         <form name="sort_form">
           <select name="sort" onchange="dropsort()">
             <?php foreach ($sort_info as $sort_query => $sort_name ) : ?>
-              <option value="<?php echo esc_attr(add_query_arg('sort', $sort_query, $sort_base_url)); ?>" <?php if ($sort == $sort_query) {echo 'selected';} ?>><?php echo $sort_name; ?>
-              </option>
+            <option
+              value="<?php echo esc_attr(add_query_arg('sort', $sort_query, $sort_base_url)); ?>"
+              <?php if ($sort == $sort_query) {echo 'selected';} ?>><?php echo $sort_name; ?>
+            </option>
             <?php endforeach; ?>
           </select>
         </form>

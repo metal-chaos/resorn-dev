@@ -1460,3 +1460,22 @@ function sort_info() {
     );
     return $array;
 }
+
+// カテゴリのテンプレートファイルを読み込む
+function read_category_template() {
+    $queried_object = get_queried_object();
+    $directory = '/category';
+     if (!empty($queried_object->term_id)) {
+          $ancestors = get_ancestors($queried_object->term_id, 'category');
+          if ($ancestors) {
+            foreach(array_reverse($ancestors) as $term) {
+              $term = get_term_by('id', $term, 'category');
+              if (!empty($term->term_id)) {
+                $directory .= '/'.$term->slug;
+              }
+            }
+          }
+        }
+        $directory .= '/'.$queried_object->slug;
+        return $directory;
+}
