@@ -253,7 +253,7 @@
               <tr>
                 <th>会社</th>
                 <td><img class="recruit_list_company"
-                    src="<?php echo do_shortcode('[company_image]'); ?>">
+                    src="<?php echo do_shortcode('[company_image]'); ?>" alt="<?php echo return_company_alt(); ?>">
                 </td>
               </tr>
               <tr class="pc-hidden">
