@@ -1479,3 +1479,19 @@ function read_category_template() {
         $directory .= '/'.$queried_object->slug;
         return $directory;
 }
+
+// 会社画像のalt属性の値を返す
+function return_company_alt() {
+    $company_name = get_post_meta(get_the_ID(), 'company_field', true);
+    $array = array(
+        'humanic' => 'ヒューマニック',
+        'goodman' => 'グッドマンサービス',
+        'apptli' => 'アプリリゾート',
+        'a-resort' => 'アルファリゾート',
+    );
+    foreach($array as $key => $name) {
+        if($company_name === $key){
+            return $name . 'のロゴ';
+        }
+    }
+}
