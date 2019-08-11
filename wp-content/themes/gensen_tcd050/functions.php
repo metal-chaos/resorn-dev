@@ -1495,3 +1495,11 @@ function return_company_alt() {
         }
     }
 }
+
+// 会社画像のリンクを返す
+function return_company_link() {
+    $company_name = get_post_meta(get_the_ID(), 'company_field', true);
+    $tag = home_url('/tag/' . $company_name . '/');
+    $link = esc_url($tag);
+    return $link;
+}

@@ -34,7 +34,7 @@ $upload_dir = wp_upload_dir();
 <table class="table_under_border">
     <tr>
         <th>会社</th>
-        <td><img src="<?php echo company_image_get(); ?>" class="table_company"></td>
+        <td><a href="<?php echo return_company_link();?>"><img src="<?php echo company_image_get(); ?>" class="table_company" alt="<?php echo return_company_alt(); ?>"></td>
     </tr>
     <tr>
         <th>評価</th>
