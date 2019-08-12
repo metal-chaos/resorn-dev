@@ -278,25 +278,32 @@
             <div class="navigation2_icons">
               <img
                 class="<?php echo esc_html($post->icon_dormitory_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-koshitsuryo-1.png">
+                src="<?php echo welfare_path('icon_dormitory_field', $post->icon_dormitory_field); ?>"
+                alt="<?php echo welfare_alt('icon_dormitory_field', $post->icon_dormitory_field); ?>">
               <img
                 class="<?php echo esc_html($post->icon_highIncome_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-koshunyu-1.png">
+                src="<?php echo welfare_path('icon_highIncome_field', $post->icon_highIncome_field); ?>"
+                alt="<?php echo welfare_alt('icon_highIncome_field', $post->icon_highIncome_field); ?>">
               <img
                 class="<?php echo esc_html($post->icon_campaign_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-campaign-1.png">
+                src="<?php echo welfare_path('icon_campaign_field', $post->icon_campaign_field); ?>"
+                alt="<?php echo welfare_alt('icon_campaign_field', $post->icon_campaign_field); ?>">
               <img
                 class="<?php echo esc_html($post->icon_meal_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-shokuji-1.png">
+                src="<?php echo welfare_path('icon_meal_field', $post->icon_meal_field); ?>"
+                alt="<?php echo welfare_alt('icon_meal_field', $post->icon_meal_field); ?>">
               <img
                 class="<?php echo esc_html($post->icon_transportationFee_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-carloan-1.png">
+                src="<?php echo welfare_path('icon_transportationFee_field', $post->icon_transportationFee_field); ?>"
+                alt="<?php echo welfare_alt('icon_transportationFee_field', $post->icon_transportationFee_field); ?>">
               <img
                 class="<?php echo esc_html($post->icon_wifi_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-wifi-1.png">
+                src="<?php echo welfare_path('icon_wifi_field', $post->icon_wifi_field); ?>"
+                alt="<?php echo welfare_alt('icon_wifi_field', $post->icon_wifi_field); ?>">
               <img
                 class="<?php echo esc_html($post->icon_spa_field); ?>"
-                src="https://resorn.net/wp-content/uploads/2018/02/new-spa-1.png">
+                src="<?php echo welfare_path('icon_spa_field', $post->icon_spa_field); ?>"
+                alt="<?php echo welfare_alt('icon_spa_field', $post->icon_spa_field); ?>">
             </div>
             <div class="recruit_list_btn">詳しい内容を見る</div>
           </div>

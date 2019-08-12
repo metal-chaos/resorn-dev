@@ -1503,3 +1503,36 @@ function return_company_link() {
     $link = esc_url($tag);
     return $link;
 }
+
+// 福利厚生のalt属性を返す
+function welfare_alt($acf_name, $acf_value) {
+    $array = array(
+        'icon_dormitory_field' => ['個室寮あり', '個室寮なし'],
+        'icon_highIncome_field' => ['高収入', '中〜低収入'],
+        'icon_campaign_field' => ['キャンペーンが充実', 'キャンペーンが乏しい'],
+        'icon_meal_field' => ['食費無料', '食費有料 or 食事なし'],
+        'icon_transportationFee_field' => ['交通費支給', '交通費なし'],
+        'icon_wifi_field' => ['Wi-Fi付き', 'Wi-Fiなし'],
+        'icon_spa_field' => ['温泉入浴可', '温泉入浴不可'],
+    );
+    foreach ($array as $key => $value) {
+        if ($key === $acf_name) {
+            $alt = $value[1];
+            if ($acf_value === 'TRUE' ) {
+                $alt = $value[0];
+            }
+            return $alt;
+        }
+    }
+}
+
+// 福利厚生の画像パスを返す
+function welfare_path($acf_name, $acf_value) {
+    $upload_dir = wp_upload_dir();
+    $image_name = 'off';
+    if ($acf_value === 'TRUE') {
+        $image_name = 'on';
+    }
+    $image_path = $upload_dir['baseurl']. '/all/welfare/'. $acf_name. '/'. $image_name. '.png';
+    return $image_path;
+}

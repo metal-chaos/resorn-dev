@@ -8,26 +8,39 @@ $upload_dir = wp_upload_dir();
 <h3 class="midashi">リゾートバイト求人のメリット</h3>
 <div class="post_icons">
     <div class="post_icon"><img
-            class="<?php the_field('icon_dormitory_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-koshitsuryo-1.png">個室寮付き</div>
+        class="<?php the_field('icon_dormitory_field'); ?>"
+        src="<?php echo welfare_path('icon_dormitory_field', $post->icon_dormitory_field); ?>"
+        alt="<?php echo welfare_alt('icon_dormitory_field', $post->icon_dormitory_field); ?>">個室寮付き
+    </div>
     <div class="post_icon"><img
-            class="<?php the_field('icon_highIncome_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-koshunyu-1.png">高収入</div>
+        class="<?php the_field('icon_highIncome_field'); ?>"
+        src="<?php echo welfare_path('icon_highIncome_field', $post->icon_highIncome_field); ?>"
+        alt="<?php echo welfare_alt('icon_highIncome_field', $post->icon_highIncome_field); ?>">高収入
+    </div>
     <div class="post_icon"><img
-            class="<?php the_field('icon_campaign_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-campaign-1.png">キャンペーン</div>
+        class="<?php the_field('icon_campaign_field'); ?>"
+        src="<?php echo welfare_path('icon_campaign_field', $post->icon_campaign_field); ?>"
+        alt="<?php echo welfare_alt('icon_campaign_field', $post->icon_campaign_field); ?>">キャンペーン
+    </div>
     <div class="post_icon"><img
-            class="<?php the_field('icon_meal_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-shokuji-1.png">無料の食事付き</div>
+        class="<?php the_field('icon_meal_field'); ?>"
+        src="<?php echo welfare_path('icon_meal_field', $post->icon_meal_field); ?>"
+        alt="<?php echo welfare_alt('icon_meal_field', $post->icon_meal_field); ?>">無料の食事付き</div>
     <div class="post_icon"><img
-            class="<?php the_field('icon_transportationFee_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-carloan-1.png">交通費支給</div>
+        class="<?php the_field('icon_transportationFee_field'); ?>"
+        src="<?php echo welfare_path('icon_transportationFee_field', $post->icon_transportationFee_field); ?>"
+        alt="<?php echo welfare_alt('icon_transportationFee_field', $post->icon_transportationFee_field); ?>">交通費支給
+    </div>
     <div class="post_icon"><img
-            class="<?php the_field('icon_wifi_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-wifi-1.png">WiFi付き</div>
+        class="<?php the_field('icon_wifi_field'); ?>"
+        src="<?php echo welfare_path('icon_wifi_field', $post->icon_wifi_field); ?>"
+        alt="<?php echo welfare_alt('icon_wifi_field', $post->icon_wifi_field); ?>">WiFi付き
+    </div>
     <div class="post_icon"><img
-            class="<?php the_field('icon_spa_field'); ?>"
-            src="<?php  echo $upload_dir['baseurl']; ?>/2018/02/new-spa-1.png">温泉入浴可</div>
+        class="<?php the_field('icon_spa_field'); ?>"
+        src="<?php echo welfare_path('icon_spa_field', $post->icon_spa_field); ?>"
+        alt="<?php echo welfare_alt('icon_spa_field', $post->icon_spa_field); ?>">温泉入浴可
+    </div>
 </div>
 
 <h3 class="midashi">リゾートバイト求人の特徴・詳細</h3>
