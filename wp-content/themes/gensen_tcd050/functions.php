@@ -1271,6 +1271,7 @@ function average_resorn_score($term_id)
 {
     // 初期化
     $no_count = 0;
+    $sum_resorn_score = 0;
 
     $args = array(
         'post_type' => 'post',
@@ -1350,6 +1351,7 @@ function average_salary_all_job_offers()
 {
     // 初期化
     $no_count = 0;
+    $sum_salary = 0;
 
     $args = array(
         'post_type' => 'post',
