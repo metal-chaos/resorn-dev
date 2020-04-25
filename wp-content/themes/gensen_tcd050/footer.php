@@ -269,7 +269,6 @@ jQuery(document).ready(function($){
     // blog archive
     if (!is_front_page() && (is_home() || is_search() || $custom_search_vars || (is_archive() && !is_post_type_archive(array($dp_options['news_slug'], $dp_options['introduce_slug']))))) {
 ?>
-  $('#post_list .article, #post_list2 .article, .page_navi, .page_navi2').css('opacity', 0);
 <?php
     }
 ?>
