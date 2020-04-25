@@ -1269,6 +1269,9 @@ function number_of_job_offers($term_id)
 // カテゴリー別の平均RESORNスコアを表示する
 function average_resorn_score($term_id)
 {
+    // 初期化
+    $no_count = 0;
+
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
@@ -1301,6 +1304,10 @@ function average_resorn_score($term_id)
 // カテゴリー別の平均時給を表示する
 function average_salary($term_id)
 {
+    // 初期化
+    $sum_salary = 0;
+    $no_count = 0;
+
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
@@ -1341,6 +1348,9 @@ function number_of_all_job_offers()
 // 全ての時給の平均を取得する
 function average_salary_all_job_offers()
 {
+    // 初期化
+    $no_count = 0;
+
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
