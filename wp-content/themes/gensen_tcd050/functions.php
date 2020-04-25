@@ -964,6 +964,7 @@ function custom_comments($comment, $args, $depth)
 // RESORN（リゾーン）スコアを算出する
 function resorn_score()
 {
+    global $post;
     $sum_resorn_score = 0;
     $key1 = get_post_meta(get_the_ID(), 'icon_dormitory_field', true);
     if ($key1 == "TRUE") {
